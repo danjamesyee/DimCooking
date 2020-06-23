@@ -49,8 +49,12 @@
 }
 
 .login-image {
+    padding: 10px;
     font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
     font-size: 22px;
+    background-image: url('crystal-steamed-dumplings-11.jpg');
+    background-position: center;
+    text-align: center;
 }
 
 .session-submit {
@@ -69,8 +73,7 @@
 
 .login-form-container {
     background-color: white;
-    padding: 20px;
-    width: 800px;
+    width: 900px;
     height: 100%;
 }
 
@@ -80,11 +83,25 @@
     font-weight: lighter;
     letter-spacing: 0.4px;
     font-family: nyt-cheltenham, georgia, "times new roman", serif;
+    font-stretch: condensed;
+
+}
+
+.close-x {
+    position: relative;
+    left: 385px;
+    top: 5px;
+    font-weight: 100;
+    color: grey;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-stretch: expanded;
+    cursor: pointer;
 }
 
 .login-form-box {
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     font-weight: 100;
     text-align: center;
+    padding: 20px;
 
 }
