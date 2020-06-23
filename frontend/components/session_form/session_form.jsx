@@ -17,7 +17,7 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user).then(this.props.closeModal);
     }
 
     renderErrors() {
@@ -36,13 +36,15 @@ class SessionForm extends React.Component {
         return(
             <div className="login-form-container">
                 <div className="login-image">
-                    <h2>Unlock Dim Sum recipes and your personal recipe
+                    <p>Unlock Dim Sum recipes and your personal recipe
                         box with a free account.
-                    </h2>
+                    </p>
                 </div>
+                <div onClick={this.props.closeModal} className="close-x">X</div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.props.welcome}
                     <br />
+                    
                     {this.renderErrors()}
                     <p>Or use your username</p>
                     <div className="login-form">
@@ -71,7 +73,7 @@ class SessionForm extends React.Component {
                             type="submit"
                             value={this.props.formType} 
                         />
-                        {this.props.navLink}
+                        {this.props.otherForm}
                         <br/>
                         <p>This site is protected by my extremely powerful willpower. Conditions apply.</p>
                     </div>
