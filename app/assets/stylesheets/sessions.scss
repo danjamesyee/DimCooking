@@ -284,3 +284,53 @@ Link {
     object-fit: cover;
     object-position: 60% 30%;
 }
+
+
+.dot {
+    z-index: 1;
+    border-radius: 54px;
+    font-size: 12px;
+    height: 108px;
+    width: 108px;
+    line-height: 1.5rem;
+    padding: 40px 10px 0;
+    position: absolute;
+    background: #e33d26;
+    bottom: 290px;
+    left: 55px;
+    text-align: center;
+    font-family: nyt-karnak-display-130124,nyt-stymie,Georgia,"Times New Roman",serif;
+    color: white;
+    font-weight: 600;
+}
+
+.dot-text {
+    position: relative;
+    bottom: 9px;
+    right: 4px;
+    width: 100px;
+    height: 15px;
+}
+
+.splash-name {
+    z-index: 1;
+    background: white;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    text-align: center;
+    font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
+    cursor: pointer;
+}
+
+.splash-title {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.splash-text {
+    font-family: nyt-karnak-display-130124,nyt-stymie,Georgia,"Times New Roman",serif;
+    font-weight: bold;
+}
