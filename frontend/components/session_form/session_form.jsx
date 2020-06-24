@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
                         box with a free account.
                     </p>
                 </div>
-                <div onClick={this.props.closeModal} className="close-x">X</div>
+                <div onClick={this.props.closeModal} className="close-x">×</div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.props.welcome}
                     
