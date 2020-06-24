@@ -62,11 +62,13 @@ class SessionForm extends React.Component {
     
 
     render() {
-        
+        const background = {
+            backgroundImage: "url('https://dimcooking-dev.s3-us-west-1.amazonaws.com/crystal-steamed-dumplings-11.jpg')"
+        };
         return(
             <div className="login-form-container">
                 
-                <div className="login-image">
+                <div className="login-image" style={background} >
                     <p>Unlock Dim Sum recipes and your personal recipe
                         box with a free account.
                     </p>
