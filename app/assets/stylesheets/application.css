@@ -72,7 +72,7 @@
     font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
     font-size: 22px;
     background-image: url('crystal-steamed-dumplings-11.jpg');
-    background-position: 60% 45%;
+    background-position: 70% 60%;
     text-align: center;
 }
 
@@ -165,8 +165,8 @@
     width: 100%;
     font-family: CheltenhamCnd-N, serif;
 
-    padding: 0!important;
-    
+    padding-bottom: 5px;
+    padding-right: 15px;
     border: none;
     height: 40px;
     cursor: pointer;
@@ -229,7 +229,16 @@
     transition-delay: 0s;
 }
 
+.errors {
+    position: fixed;
+    
+}
 
+.error-text {
+    padding-top: 10px;
+    text-align: left;
+    color:  #e33d26;
+}
 
 .gear-dropdown:hover {
     max-height: 500px;

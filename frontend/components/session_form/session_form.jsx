@@ -1,6 +1,7 @@
 import React from 'react';
 
 class SessionForm extends React.Component {
+    
     constructor(props){
         super(props);
         this.state = {
@@ -32,22 +33,22 @@ class SessionForm extends React.Component {
         
     }
     
-    clearErrors() {
-        this.errors = null;
-    }
+    
 
     renderErrors() {
         return(
-            <ul className="errors">
+            <div className='error-text'>
                 {this.props.errors.map((error, i) => (
                     <div key={`error-${i}`}>
                         {error}
                     </div>
                 ))}
-            </ul>
+            </div>
         )
         
     };
+
+    
 
     render() {
         return(
@@ -85,10 +86,13 @@ class SessionForm extends React.Component {
                                 className='login-input'
                             />
                         </label>
-                        {this.renderErrors()}
+                        <div className="errors">
+                            {this.renderErrors()}
+                        </div>
                         <br/>
+                        <br />
+                        <br />
                         <p>By creating an account, you agree to absolutely nothing.</p>
-                        <br/>
                         <input 
                             className="session-submit" 
                             type="submit"
