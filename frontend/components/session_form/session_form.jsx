@@ -52,9 +52,9 @@ class SessionForm extends React.Component {
                 <div onClick={this.props.closeModal} className="close-x">X</div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.props.welcome}
-                    <br />
+                    
                     <button className="demo-submit" onClick={this.handleDemo}>
-                        🥟 Continue with demo
+                        🥟  Continue with Demo
                     </button>
                     {this.renderErrors()}
                     
@@ -85,9 +85,13 @@ class SessionForm extends React.Component {
                             type="submit"
                             value={this.props.formType} 
                         />
-                        {this.props.otherForm}
                         <br/>
-                        <p>This site is protected by my extremely powerful willpower. Conditions apply.</p>
+                        <br />
+                        <div className="other-form">
+                            {this.props.otherForm}
+                            <br/>
+                            <p>This site is protected by my extremely powerful willpower. Conditions apply.</p>
+                        </div>
                     </div>
                 </form>
             </div>

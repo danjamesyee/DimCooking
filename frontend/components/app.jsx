@@ -9,10 +9,12 @@ import { AuthRoute } from '../util/route_util';
 const App = () => (
     <div>
         <Modal />
-        <h1>點 Dim Cooking</h1>
-        <GreetingContainer />
-               
-     
+        <nav className="outer-nav"> 
+            <div className="main-nav"> 
+                <div className="main-title">點 | Dim Cooking</div>
+                <GreetingContainer />
+            </div>
+        </nav>
     </div>
 );
 

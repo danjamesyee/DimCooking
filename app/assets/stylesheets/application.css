@@ -14,6 +14,9 @@
  *= require_self
  */
 
+ button {
+     border: none;
+ }
 
  .modal-background {
   position: fixed;
@@ -43,17 +46,33 @@
   cursor: pointer;
 }
 
+.drop-button {
+    background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(227, 61, 38);
+}
+
+.other-form {
+    text-align: center;
+}
+
 .login-form-container {
     display: flex;
     justify-content: flex-end;
 }
 
 .login-image {
-    padding: 10px;
+    padding-left: 8px;
     font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
     font-size: 22px;
     background-image: url('crystal-steamed-dumplings-11.jpg');
-    background-position: center;
+    background-position: 60% 45%;
     text-align: center;
 }
 
@@ -91,12 +110,12 @@
 
 .welcome {
     font-size: 22px;
-    text-align: center;
     font-weight: lighter;
     letter-spacing: 0.4px;
-    font-family: nyt-cheltenham, georgia, "times new roman", serif;
+    font-family: CheltenhamCnd-N, serif;
     font-stretch: condensed;
-
+    transform: scaleY(1.08);
+    text-align: center;
 }
 
 .close-x {
@@ -118,17 +137,116 @@
     font-size: 12px;
 }
 
+.nav-button {
+    color: #e33d26;
+    font-weight: 800;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    top: 0;
+    background-color: white;
+    background: none!important;
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    padding: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.plain-text {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 100;
+    font-size: 11px;
+    color: black;
+}
+
 .demo-submit {
     border-radius: 0.19em;
     width: 100%;
-    font-family: 'nyt-franklin', arial, helvetica, sans-serif;
+    font-family: CheltenhamCnd-N, serif;
+
     padding: 0!important;
+    
     border: none;
     height: 40px;
     cursor: pointer;
-    font-weight: 550;
-    font-size: 1em;
+    font-weight: 555;
+    font-size: 17px;
     font-stretch: ultra-condensed;
     background-color: white;
     border: 1px solid black;
+    display: inline-block;
+    
+}
+
+.main-nav {
+    color: #e33d26;
+    font-family:  'Abril Fatface';
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    margin-block-start: 0;
+    border-bottom: 1px solid rgb(15, 13, 13);
+    width: 100%;
+}
+
+.gear-dropdown-btn {
+    position: relative;
+    cursor: pointer;
+    margin-left: 5px;
+    color: grey;
+    float: right;
+    box-sizing: border-box;
+}
+
+.gear-dropdown {
+    
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    width: 100px;
+    z-index: 1;
+    max-height: 0; overflow: hidden;
+    opacity: 0;
+
+    transition: max-height 0s 1.5s,
+                opacity .4s 1s;
+    pointer-events: none;
+}
+
+.gear-dropdown > * {
+    pointer-events: auto;
+}
+
+.gear-dropdown:hover,
+.gear-dropdown-btn:hover .gear-dropdown {
+    max-height: 500px;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+
+.gear-dropdown:hover {
+    max-height: 500px;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+.main-title {
+    width: 80%
+}
+
+.gear-dropdown-btn:hover > .gear-dropdown {
+    display: block;
+    color: #e33d26;
+    
+}
+
+.gear-dropdown-btn:hover {
+    color: #e33d26;
 }
