@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleDemo = this.handleDemo.bind(this);
+        this.handleKeyUp = this.handleKeyUp.bind(this);
     }
 
     update(field) {
@@ -23,7 +24,7 @@ class SessionForm extends React.Component {
     }
 
     handleDemo(e) {
-        if (e.keyCode === 13) console.log("hellohgjlhhjhhjklhjklhdfkldshrwklhfdulafhdkjfhdsalkfhdsajklf");
+        
         e.preventDefault();
         this.props.login({
             username: 'gilbert12',
@@ -32,8 +33,18 @@ class SessionForm extends React.Component {
         if (e.key === 'Enter') e.preventDefault();
         
     }
+
+    componentDidMount() {
+        window.addEventListener('keyup', this.handleKeyUp, false);
+    }
+
     
-    
+
+    handleKeyUp(e) {
+
+        if (e.keyCode) this.props.closeModal();
+
+    }
 
     renderErrors() {
         return(
@@ -54,6 +65,7 @@ class SessionForm extends React.Component {
         
         return(
             <div className="login-form-container">
+                
                 <div className="login-image">
                     <p>Unlock Dim Sum recipes and your personal recipe
                         box with a free account.
@@ -79,6 +91,7 @@ class SessionForm extends React.Component {
                             />
                         </label >
                         <br/>
+                        <br />
                         <label className='login-label'>Password
                             <br/>
                             <input type="password"

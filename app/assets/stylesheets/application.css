@@ -18,21 +18,3 @@
 
 
 
-
-.main-title {
-    width: 80%;
-    color: #e33d26;
-}
-Link {
-    text-decoration: none;
-
-}
-.gear-dropdown-btn:hover > .gear-dropdown {
-    
-    color: #e33d26;
-    
-}
-
-.gear-dropdown-btn:hover {
-    color: #e33d26;
-}
