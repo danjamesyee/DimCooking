@@ -22,26 +22,31 @@ class SessionForm extends React.Component {
     }
 
     handleDemo(e) {
-        if (e.which === 13) {
-            e.preventDefault();
-        } else {
+        
+        e.preventDefault();
         this.props.login({
             username: 'gilbert12',
             password: '1234566'
         }).then(this.props.closeModal)
-        }
+        if (e.key === 'Enter') e.preventDefault();
+        
+    }
+    
+    clearErrors() {
+        this.errors = null;
     }
 
     renderErrors() {
         return(
-            <ul>
+            <ul className="errors">
                 {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <div key={`error-${i}`}>
                         {error}
-                    </li>
+                    </div>
                 ))}
             </ul>
         )
+        
     };
 
     render() {
@@ -59,7 +64,7 @@ class SessionForm extends React.Component {
                     <button className="demo-submit" onClick={this.handleDemo}>
                         🥟  Continue with Demo
                     </button>
-                    {this.renderErrors()}
+                    
                     
                     <p className="separator"></p>
                     <div className="login-form">
@@ -80,6 +85,7 @@ class SessionForm extends React.Component {
                                 className='login-input'
                             />
                         </label>
+                        {this.renderErrors()}
                         <br/>
                         <p>By creating an account, you agree to absolutely nothing.</p>
                         <br/>
