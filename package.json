@@ -28,9 +28,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "npm install react react-dom redux react-redux react-dom redux-logger webpack webpack-cli @babel/core babel-loader @babel/preset-env @babel/preset-react --save",
-    "webpack": "webpack --watch --mode=development",
+
     "postinstall": "webpack"
   },
   "keywords": [],
