@@ -47,17 +47,23 @@
 }
 
 .drop-button {
-    background: none!important;
+background: white;
   border: none;
-  padding: 0!important;
+  padding: 5px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  width: 100%;
   /*optional*/
   font-family: arial, sans-serif;
   /*input has OS specific font-family*/
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
+  text-align: left;
   color: rgb(227, 61, 38);
 }
-
+.drop-button:hover {
+    background-color: lightgrey;
+}
 .other-form {
     text-align: center;
 }
@@ -189,7 +195,7 @@
     position: relative;
     padding: 0;
     margin-block-start: 0;
-    border-bottom: 1px solid rgb(15, 13, 13);
+    border-bottom: 1px solid lightgrey;
     width: 100%;
 }
 
@@ -203,9 +209,9 @@
 }
 
 .gear-dropdown {
-    
     position: absolute;
     background-color: white;
+    border: 1px solid lightgrey;
     right: 0px;
     width: 100px;
     z-index: 1;
@@ -224,7 +230,7 @@
 
 .gear-dropdown:hover,
 .gear-dropdown-btn:hover .gear-dropdown {
-    max-height: 500px;
+    max-height: 100px;
     opacity: 1;
     transition-delay: 0s;
 }
@@ -240,11 +246,7 @@
     color:  #e33d26;
 }
 
-.gear-dropdown:hover {
-    max-height: 500px;
-    opacity: 1;
-    transition-delay: 0s;
-}
+
 
 
 .main-title {
@@ -256,7 +258,7 @@ Link {
 
 }
 .gear-dropdown-btn:hover > .gear-dropdown {
-    display: block;
+    
     color: #e33d26;
     
 }

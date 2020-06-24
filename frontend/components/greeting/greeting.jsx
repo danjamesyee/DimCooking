@@ -25,11 +25,11 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     const personalGreeting = () => (
         <div className="gear-dropdown-btn">
             <i className="fas fa-cog"></i>
-            <ul id="gear-dropdown" className="gear-dropdown">
+            <div id="gear-dropdown" className="gear-dropdown">
                 <div>
                     <button className='drop-button' onClick={logout}>Log Out</button>
                 </div>
-            </ul>
+            </div>
         </div>
     );
 

@@ -23,7 +23,7 @@ class SessionForm extends React.Component {
     }
 
     handleDemo(e) {
-        
+        if (e.keyCode === 13) console.log("hellohgjlhhjhhjklhjklhdfkldshrwklhfdulafhdkjfhdsalkfhdsajklf");
         e.preventDefault();
         this.props.login({
             username: 'gilbert12',
@@ -51,6 +51,7 @@ class SessionForm extends React.Component {
     
 
     render() {
+        
         return(
             <div className="login-form-container">
                 <div className="login-image">
@@ -62,7 +63,7 @@ class SessionForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.props.welcome}
                     
-                    <button className="demo-submit" onClick={this.handleDemo}>
+                    <button type="button" className="demo-submit" onClick={this.handleDemo}>
                         🥟  Continue with Demo
                     </button>
                     
