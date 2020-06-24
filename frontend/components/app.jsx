@@ -3,7 +3,7 @@ import GreetingContainer from "./greeting/greeting_container";
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
 import Modal from './modal/modal';
-import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
         <Modal />
         <nav className="outer-nav"> 
             <div className="main-nav"> 
-                <div className="main-title">點 | Dim Cooking</div>
+                <Link to="/" className="main-title" style={{ textDecoration: 'none' }}><div >點 | Dim Cooking</div></Link>
                 <GreetingContainer />
             </div>
         </nav>

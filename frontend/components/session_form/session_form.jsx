@@ -22,11 +22,14 @@ class SessionForm extends React.Component {
     }
 
     handleDemo(e) {
-        e.preventDefault();
+        if (e.which === 13) {
+            e.preventDefault();
+        } else {
         this.props.login({
             username: 'gilbert12',
             password: '1234566'
         }).then(this.props.closeModal)
+        }
     }
 
     renderErrors() {

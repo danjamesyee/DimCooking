@@ -217,6 +217,7 @@
     pointer-events: none;
 }
 
+
 .gear-dropdown > * {
     pointer-events: auto;
 }
@@ -238,9 +239,13 @@
 
 
 .main-title {
-    width: 80%
+    width: 80%;
+    color: #e33d26;
 }
+Link {
+    text-decoration: none;
 
+}
 .gear-dropdown-btn:hover > .gear-dropdown {
     display: block;
     color: #e33d26;
