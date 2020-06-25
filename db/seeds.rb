@@ -15,7 +15,13 @@ gilbert_user = User.create(username: 'gilbert12', password: '1234566')
 recipe1 = Recipe.create( 
     id: 1, 
     title: "Shrimp Dumplings(蝦餃)", 
-    summary: "A simple Dim Sum classic", 
+    summary: "A simple Dim Sum classic. At dim sum houses, the server with the 
+            steamed crystal shrimp dumplings, commonly known as “xia jiao” 
+            or “har gow” in Cantonese, is always the most popular person on the floor. 
+            I’ll even dare to stick my neck out and claim that har gow might be the #1 
+            dim sum item of all time. At least, I wouldn’t be surprised if they were. 
+            Whatever you do, don’t ask why it took me this long to post this recipe…
+            Oh heck, if you insist…", 
     ingredients: "['1/2 pound raw shrimp, peeled', '1 teaspoon oyster sauce', 
         '1 tablespoon vegetable oil', '1/4 teaspoon white pepper', 
         '1 teaspoon sesame oil', '1/4 teaspoon salt']", 

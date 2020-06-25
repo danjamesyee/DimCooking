@@ -26,7 +26,7 @@ class RecipePage extends React.Component {
         }
         if (recipe.preparation != '') {
             preparation = recipe.preparation.map((step, i) =>
-        <div key={i}>Step {i + 1} <br/> {step}</div>
+                <div key={i}> <strong>Step {i + 1}</strong><br /><small></small><br /> {step}<br /><br />  </div>
             )
         }
         
@@ -39,7 +39,7 @@ class RecipePage extends React.Component {
                     <div className='separator'></div>
                     <br/>
                     <div className="recipe-show">
-                        {recipe.summary}
+                        <div>{recipe.summary}</div>
                         <img src={recipe.photoUrl} width="450px" height="320px" />
                     </div>
                     <br/>
@@ -52,8 +52,12 @@ class RecipePage extends React.Component {
 
                     <div className="instructions">
                         <div className="ingredients">INGREDIENTS
+                        <br/>
+                        <br />
                             {ingredients}</div>
                         <div className="preparation">PREPARATION
+                        <br />
+                            <br />
                             {preparation}</div>
                     </div>
                 </div>

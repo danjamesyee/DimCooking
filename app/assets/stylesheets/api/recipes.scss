@@ -15,8 +15,9 @@
 
 .recipe-box {
     position: absolute;
-    left: 400px;
-    margin-right: 400px;
+    width: 70%;
+    left: 25%;
+    padding-right: 20%;
 }
 
 
@@ -40,29 +41,40 @@
     display: flex;
     justify-content: space-between;
     font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
-    
+    line-height: 1.5;
 }
 
 .recipe-show > img {
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
+.recipe-show > div {
+    width: 35%;
+}
 .instructions {
     display: flex;
     justify-content: space-between;
     font-family:  'Abril Fatface';
-    
+    font-size: 12px;
 }
 
 .preparation {
     width: 70%;
 }
 
+
+.preparation > div {
+    font-size: 16px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    line-height: 1.5;
+}
 .ingredient {
     font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
 }
 
 .ingredients {
     width: 30%;
+    line-height: 2;
 }

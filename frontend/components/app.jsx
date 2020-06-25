@@ -13,9 +13,15 @@ const App = () => (
         <nav className="outer-nav"> 
             <div className="main-nav">
                 <Link to="/" className="main-title" style={{ textDecoration: 'none' }}><div >點 | Dim Cooking</div></Link>
-                <GreetingContainer />  
+                <div className="search"></div>
+                <GreetingContainer className='greeting'/>  
             </div>
-
+            <br/>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <Switch>
                 <Route path='/' exact component={MainPage}/>
                 <Route path='/recipes/:recipeId' component={RecipePage}/>

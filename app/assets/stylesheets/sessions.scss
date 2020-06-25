@@ -190,15 +190,23 @@ background: white;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     padding-left: 15px;
     padding-top: 5px;
     margin-block-start: 0;
     border-bottom: 2px solid lightgrey;
     width: 100%;
-    height: 100%;
-
+    height: 58px;
+    z-index: 1;
+    background-color: white;
 }
+
+.placeholder {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
 
 .space {
     height: 500px;
@@ -257,7 +265,7 @@ background: white;
 }
 
 .main-title {
-    width: 80%;
+    width: 19%;
     color: #e33d26;
 }
 Link {
@@ -278,9 +286,9 @@ Link {
     position: absolute;
     width: 100%;
     height: 90%;
-    top: 60px;
+    top: 58px;
     object-fit: cover;
-    object-position: 60% 30%;
+    object-position: 65% 25%;
 }
 
 
@@ -336,3 +344,6 @@ Link {
 }
 
 
+.search {
+    width: 50%;
+}

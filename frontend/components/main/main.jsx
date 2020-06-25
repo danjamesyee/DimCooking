@@ -23,7 +23,7 @@ class MainPage extends React.Component{
                             <br />
                             <br/>
                             <div className="splash-title">{recipe.title}</div>                            <br />
-                            <div>{recipe.summary}</div>
+                            <div>A simple Dim Sum classic</div>
                             <br />
                             <div className='splash-text'>Gilbert Bui</div>
                         </span>
