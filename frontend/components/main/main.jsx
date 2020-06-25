@@ -12,20 +12,12 @@ class MainPage extends React.Component{
     }
 
     render () {
-        let file = 'A'
         let recipe = this.props.recipes[0] || {photoUrl: '', title: ''};
-        // if (recipe.photoUrl != '') {
         
-        // } else {
-        //     debugger
-        //     let imgComp, titleComp = null;
-        // }
-        debugger
         return (
             <div>
                 <div className="splash" >
                     <img src={recipe.photoUrl} width="100px" height="50px" />
-                    <div className="splash-box">
                         <span className="splash-name">
                             <br/>
                             <br />
@@ -33,13 +25,12 @@ class MainPage extends React.Component{
                             <div className="splash-title">{recipe.title}</div>                            <br />
                             <div>{recipe.summary}</div>
                             <br />
-                            <div className='splash-text'>Daniel Yee</div>
+                            <div className='splash-text'>Gilbert Bui</div>
                         </span>
                         <span className="dot">
                             <div className='dot-text'>RECIPE</div>
                             <div className='dot-text'>OF THE DAY</div>
                         </span>
-                    </div>
                 </div>
             </div>
         )
