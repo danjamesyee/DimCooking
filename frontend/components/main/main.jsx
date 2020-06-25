@@ -7,19 +7,31 @@ class MainPage extends React.Component{
         super(props);
     }
 
+    componentDidMount() {
+        this.props.fetchRecipes();
+    }
+
     render () {
+        let file = 'A'
+        let recipe = this.props.recipes[0] || {photoUrl: '', title: ''};
+        // if (recipe.photoUrl != '') {
+        
+        // } else {
+        //     debugger
+        //     let imgComp, titleComp = null;
+        // }
+        debugger
         return (
             <div>
                 <div className="splash" >
-                    <img src="https://dimcooking-dev.s3-us-west-1.amazonaws.com/15.%E6%99%B6%E7%91%A9%E9%AE%AE%E8%9D%A6%E9%A4%832880x1920_Gz5GCtr.jpg" width="100px" height="50px"/>
+                    <img src={recipe.photoUrl} width="100px" height="50px" />
                     <div className="splash-box">
                         <span className="splash-name">
                             <br/>
                             <br />
                             <br/>
-                            <div className="splash-title">Shrimp Dumplings(蝦餃)</div>
-                            <br />
-                            <div>A simple Dim Sum classic</div>
+                            <div className="splash-title">{recipe.title}</div>                            <br />
+                            <div>{recipe.summary}</div>
                             <br />
                             <div className='splash-text'>Daniel Yee</div>
                         </span>
