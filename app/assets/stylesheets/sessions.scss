@@ -199,6 +199,7 @@ background: white;
     height: 58px;
     z-index: 1;
     background-color: white;
+    overflow: hidden;
 }
 
 .placeholder {
@@ -226,9 +227,9 @@ background: white;
 .gear-dropdown {
     position: absolute;
     background-color: white;
-    border-top: 1px solid lightgrey;
+    
     border: 1px solid lightgrey;
-    top: 53px;
+    top: 52px;
     right: 0px;
     width: 200px;
     height: 40px;
