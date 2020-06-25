@@ -5,7 +5,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import NotFound from './routes/notFoundPage';
 import MainPage from './main/main_container'
-
+import RecipePage from './recipe/recipe_container';
 
 const App = () => (
     <div>
@@ -18,6 +18,7 @@ const App = () => (
 
             <Switch>
                 <Route path='/' exact component={MainPage}/>
+                <Route path='/recipes/:recipeId' component={RecipePage}/>
                 <Route component={NotFound} />
             </Switch>
         </nav>

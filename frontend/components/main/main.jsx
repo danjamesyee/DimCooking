@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 class MainPage extends React.Component{
@@ -16,7 +16,7 @@ class MainPage extends React.Component{
         
         return (
             <div>
-                <div className="splash" >
+                <Link to={`/recipes/${recipe.id}`} className="splash" >
                     <img src={recipe.photoUrl} width="100px" height="50px" />
                         <span className="splash-name">
                             <br/>
@@ -31,7 +31,7 @@ class MainPage extends React.Component{
                             <div className='dot-text'>RECIPE</div>
                             <div className='dot-text'>OF THE DAY</div>
                         </span>
-                </div>
+                </Link>
             </div>
         )
     }

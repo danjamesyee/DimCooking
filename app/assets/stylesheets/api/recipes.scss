@@ -1,3 +1,68 @@
 // Place all the styles related to the api/recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.recipe-title {
+    font-size: 35px;
+    position: relative;
+
+    letter-spacing: 0.4px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-stretch: condensed;
+    text-align: left;
+}
+
+.recipe-box {
+    position: absolute;
+    left: 400px;
+    margin-right: 400px;
+}
+
+
+.author-name {
+    position: relative;
+    top: 3px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+}
+
+.separator-recipe {
+    position: relative;
+    top: 15px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.recipe-show {
+    position: relative;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
+    
+}
+
+.recipe-show > img {
+    width: 50%;
+    height: 100%;
+}
+
+.instructions {
+    display: flex;
+    justify-content: space-between;
+    font-family:  'Abril Fatface';
+    
+}
+
+.preparation {
+    width: 70%;
+}
+
+.ingredient {
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.ingredients {
+    width: 30%;
+}
