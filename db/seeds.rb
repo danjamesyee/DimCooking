@@ -42,9 +42,7 @@ recipe1 = Recipe.create(
         the dumplings are made.', 'Once the water in the steamer is boiled, 
         steam the shrimp dumplings for 6 minutes using high heat and serve hot. 
         Make sure that they each have an inch and a half to expand during the cooking process.'], 
-    author_id: User.find_by(username: 'gilbert12').id)
-
-recipe1.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/hargow.jpg"), filename: 'hargow.jpg')
+    author_id: User.find_by(username: 'gilbert12').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/aBuUGcfVYTfPq935gXPHHrQq"), filename: 'hargow.jpg')
 
 
 recipe2 = Recipe.create(
@@ -84,10 +82,7 @@ recipe2 = Recipe.create(
         or allow them to cool, place into freezer bags, and freeze for later! 
         When you’re ready to eat them, just steam them right out of the freezer 
         for about 30 minutes.'],
-    author_id: User.find_by(username: 'thedaniel').id)
-
-
-recipe2.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/nomaigai.jpg"), filename: 'nomaigai.jpg')
+    author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/vy5jGJPxJBwd9MwcRkdMzcfT"), filename: 'nomaigai.jpg')
 
 recipe3 = Recipe.create(
     id: 3,
@@ -138,10 +133,7 @@ recipe3 = Recipe.create(
         using a bamboo steamer (be sure the boiling water does not touch the 
         buns during steaming process). Once the water boils, place the buns in 
         the steamer and steam each batch for 12 minutes over high heat.'],
-    author_id: User.find_by(username: 'thedaniel').id)
-
-
-recipe3.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/chasiubau.jpeg"), filename: 'chasiubau.jpg')
+    author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/mpwrNLmf2eeEepJrW9iF6tbG"), filename: 'chasiubau.jpg')
 
 
 recipe4 = Recipe.create(
@@ -183,6 +175,4 @@ recipe4 = Recipe.create(
         but most people pan-fry the turnip cake first. Add a couple tablespoons 
         oil to a non-stick or seasoned cast iron pan over medium heat. 
         Fry the cakes on both sides until golden and crispy. Serve with oyster sauce!'],
-    author_id: User.find_by(username: 'thedaniel').id)
-
-recipe4.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/lobakgo.jpg"), filename: 'lobakgo.jpg')
+    author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/n54MLtkbtyxXAu1NhHDZwM1i"), filename: 'lobakgo.jpg')
