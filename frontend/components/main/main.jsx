@@ -10,7 +10,7 @@ class MainPage extends React.Component{
         this.state = {
             recipe: {},
             recipes: [],
-            count: 1
+            count: 0
         }
     }
 
@@ -19,7 +19,7 @@ class MainPage extends React.Component{
             .then( response =>
                 {this.setState({
                     recipes: Object.values(response.recipes),
-                    recipe: Object.values(response.recipes)[1]
+                    recipe: Object.values(response.recipes)[0]
                 })}
             )
     }

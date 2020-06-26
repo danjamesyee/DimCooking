@@ -56,8 +56,9 @@ button:focus {outline:0;}
 .instructions {
     display: flex;
     justify-content: space-between;
-    font-family:  'Abril Fatface';
+    font-family: nyt-karnak-display-130124,nyt-stymie,Georgia,"Times New Roman",serif;    
     font-size: 12px;
+    font-weight: bold;
 }
 
 .preparation {
@@ -142,14 +143,21 @@ button:focus {outline:0;}
     border: 1px solid lightgrey;
     height: 250px;
     margin: 20px;
+    
+}
+
+.caro-container:hover {
+    box-shadow: 1px 1px 10px 3px #888888;
+    z-index: 1;
 }
 
 .cards-slider-wrapper {
-    left: 170%;
+    
+    left: 100%;
     overflow: hidden;
     display: flex;
     position: absolute;
-    top: -30px;
+    top: -10px;
     transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     .card {
         flex: 1;
@@ -188,7 +196,7 @@ button:focus {outline:0;}
 }
 
 .col {
-  height: 264px;
+  height: 364px;
   position: relative;
   &:before,
   &:after {

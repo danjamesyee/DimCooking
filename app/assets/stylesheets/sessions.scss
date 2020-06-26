@@ -191,14 +191,15 @@ background: white;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     padding-left: 15px;
     padding-top: 5px;
     margin-block-start: 0;
     border-bottom: 2px solid lightgrey;
     width: 100%;
     height: 58px;
-    z-index: 1;
+    z-index: 9999;   
+    background:white;
     
 }
 
@@ -298,7 +299,7 @@ Link {
 
 
 .dot {
-    z-index: 1;
+    z-index: 5;
     border-radius: 54px;
     font-size: 12px;
     height: 108px;
@@ -324,7 +325,7 @@ Link {
 }
 
 .splash-name {
-    z-index: 1;
+    z-index: 5;
     background: white;
     width: 285px;
     height: 260px;
