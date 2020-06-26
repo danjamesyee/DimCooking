@@ -72,6 +72,8 @@ class MainPage extends React.Component{
                             <div className='dot-text'>OF THE DAY</div>
                         </span>
                 </Link>
+                
+                <h1>What to Cook This Week</h1>
                 <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>&lt;</button>
                 <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>&gt;</button>
                     <div className='carousel'>
@@ -85,7 +87,7 @@ class MainPage extends React.Component{
                                     recipes.map((recipe) => 
                                     <Link to={`/recipes/${recipe.id}`} key={recipe.id}>
                                     <div className="caro-container"> 
-                                        <img src={recipe.photoUrl} id={`card-${recipe.id}`} className="card" width="250px" height="170px" />
+                                                <img src={recipe.photoUrl} id={`card-${recipe.id}`} className="card" width="250px" height="170px" />
                                         <div className='carousel-title'>{recipe.title}</div>
                                         <div className='author-name-c'>By Daniel Yee</div>
                                     </div>
