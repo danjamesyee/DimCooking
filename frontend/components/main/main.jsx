@@ -10,7 +10,7 @@ class MainPage extends React.Component{
         this.state = {
             recipe: {},
             recipes: [],
-            count: 0
+            count: 1
         }
     }
 
@@ -19,7 +19,7 @@ class MainPage extends React.Component{
             .then( response =>
                 {this.setState({
                     recipes: Object.values(response.recipes),
-                    recipe: Object.values(response.recipes)[0]
+                    recipe: Object.values(response.recipes)[1]
                 })}
             )
     }
@@ -55,7 +55,7 @@ class MainPage extends React.Component{
         const splashRecipe = recipes[0] || {}
         // debugger;
         return (
-            <div>
+            <div className="body">
                 <Link to={`/recipes/${splashRecipe.id}`} className="splash" >
                     <img src={splashRecipe.photoUrl} width="100px" height="50px" />
                         <span className="splash-name">
@@ -72,12 +72,24 @@ class MainPage extends React.Component{
                             <div className='dot-text'>OF THE DAY</div>
                         </span>
                 </Link>
-                
+                <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>Prev</button>
+                <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>Next</button>
                     <div className='carousel'>
-                        <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length - 1}>Next</button>
-                        <button onClick={this.prevRecipe} disabled={recipe.id === 1}>Prev</button>
-                    
-                    <Link to={`/recipes/${recipe.id}`} ><img src={recipe.photoUrl} width="500px" heigh="300px"/></Link>
+                        
+                        <div className="col">
+                            <div className={`cards-slider active-slide-${recipe.id}`}>
+                                <div className="cards-slider-wrapper" style={{
+                                    'transform': `translateX(-${recipe.id*(100/recipes.length)}%)` 
+                                }}>
+                                    {
+                                    recipes.map((recipe) => <Link to={`/recipes/${recipe.id}`} key={recipe.id}><img src={recipe.photoUrl} id={`card-${recipe.id}`} className="card" width="500px" height="300px" /></Link>)
+                                    }
+                                    
+                                </div>
+                            </div> 
+                        </div>
+                        
+
                     </div>
                 
             </div>
