@@ -11,6 +11,7 @@ class RecipePage extends React.Component {
 
     componentDidMount() {
         this.props.fetchRecipe(this.props.match.params.recipeId);
+        window.scrollTo(0, 0);
         // this.recipe = this.props.recipe;
     }
 

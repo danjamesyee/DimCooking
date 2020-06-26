@@ -72,15 +72,19 @@ class MainPage extends React.Component{
                             <div className='dot-text'>OF THE DAY</div>
                         </span>
                 </Link>
+                <div className="main-header">
+                    <h1>What to Cook This Year</h1>
+                    <h4>RECIPES, GUIDES AND MORE FOR THE YEAR OF 2020</h4>
+                    <div id="separator-caro"></div>
+                    <h3>Dan's Suggestions</h3>
+                    <h5>Recipes selected by Daniel Yee, food editor of this website.</h5>
+                </div>
                 
-                <h1>What to Cook This Year</h1>
-                <h4>RECIPES, GUIDES AND MORE FOR THE YEAR OF 2020</h4>
-                <div id="separator-caro"></div>
-                <h3>Dan's Suggestions</h3>
-                <h5>Recipes selected by Daniel Yee, food editor of this website.</h5>
-                <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>&lt;</button>
-                <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>&gt;</button>
                     <div className='carousel'>
+                        <div className="buttons-pos">
+                            <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>&lt;</button>
+                            <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>&gt;</button>
+                        </div>
                         
                         <div className="col">
                             <div className={`cards-slider active-slide-${recipe.id}`}>
