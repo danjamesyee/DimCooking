@@ -40,3 +40,8 @@ padding:0;
   color: inherit;
   text-decoration: none;
 }
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}

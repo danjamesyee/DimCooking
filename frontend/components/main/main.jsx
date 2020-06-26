@@ -72,8 +72,8 @@ class MainPage extends React.Component{
                             <div className='dot-text'>OF THE DAY</div>
                         </span>
                 </Link>
-                <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>Prev</button>
-                <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>Next</button>
+                <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>&lt;</button>
+                <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>&gt;</button>
                     <div className='carousel'>
                         
                         <div className="col">
@@ -82,7 +82,15 @@ class MainPage extends React.Component{
                                     'transform': `translateX(-${recipe.id*(100/recipes.length)}%)` 
                                 }}>
                                     {
-                                    recipes.map((recipe) => <Link to={`/recipes/${recipe.id}`} key={recipe.id}><img src={recipe.photoUrl} id={`card-${recipe.id}`} className="card" width="500px" height="300px" /></Link>)
+                                    recipes.map((recipe) => 
+                                    <Link to={`/recipes/${recipe.id}`} key={recipe.id}>
+                                    <div className="caro-container"> 
+                                        <img src={recipe.photoUrl} id={`card-${recipe.id}`} className="card" width="250px" height="170px" />
+                                        <div className='carousel-title'>{recipe.title}</div>
+                                        <div className='author-name-c'>By Daniel Yee</div>
+                                    </div>
+                                    </Link>
+                                    )
                                     }
                                     
                                 </div>
