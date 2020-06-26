@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ 
+
 html {
   box-sizing: border-box;
 }
@@ -44,4 +46,75 @@ padding:0;
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+  
 }
+
+
+.footer {
+  position: absolute;
+  bottom: -170%;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  color: white;
+ 
+}
+
+.footer > div {
+  
+  bottom: 22%;
+  font-family: 'Nanum Myeongjo', serif;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.footer > div, .footer > h1 {
+  left: 10%;
+  
+}
+
+
+.foot-label {
+  font-family: 'Nanum Myeongjo', serif;
+  width: 50%;
+  font-size: 13px;
+  position: relative;
+  top: 10%;
+}
+
+.flexer {
+  height: 100%;
+  width: 100%;
+  border: 5px solid blue;
+  display: flex;
+  
+}
+
+.learn {
+  width: 50%;
+  height: 20%;
+  top: 227.5%;
+  left: 50%;
+  
+}
+
+.learn > div{
+  position: relative;
+  
+  padding: 10px;
+  color: white;
+  font-family: nyt-franklin,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+
+.learn > h1 {
+  position: relative;
+  color: white;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+
+

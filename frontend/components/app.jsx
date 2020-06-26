@@ -6,9 +6,10 @@ import { AuthRoute } from '../util/route_util';
 import NotFound from './routes/notFoundPage';
 import MainPage from './main/main_container'
 import RecipePage from './recipe/recipe_container';
+import Footer from './footer';
 
 const App = () => (
-    <div>
+    <div className="cheese">
         <Modal />
         <nav className="outer-nav"> 
             <div className="main-nav">
@@ -29,7 +30,9 @@ const App = () => (
                 <Route path='/recipes/:recipeId' component={RecipePage}/>
                 <Route component={NotFound} />
             </Switch>
+            
         </nav>
+        
     </div>
 );
 
