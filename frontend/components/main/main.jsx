@@ -74,6 +74,10 @@ class MainPage extends React.Component{
                 </Link>
                 
                 <h1>What to Cook This Week</h1>
+                <h4>RECIPES, GUIDES AND MORE FOR THE YEAR OF 2020</h4>
+                <div id="separator-caro"></div>
+                <h3>Dan's Suggestions</h3>
+                <h5>Recipes selected by Daniel Yee, food editor of this website.</h5>
                 <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>&lt;</button>
                 <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>&gt;</button>
                     <div className='carousel'>
