@@ -14,12 +14,12 @@ const Footer = () => (
                     them become better, more competent cooks.
                 </div>
                 <div className="learn">
-                    <h1 className='foot-label'>LEARN MORE</h1>
-                    <a href="https://github.com/danjamesyee"><div>Github</div></a>
-                    <a href="https://github.com/danjamesyee"><div>LinkedIn</div></a>
+                    <h1 className='foo'>LEARN MORE</h1>
+                    <div><a href="https://github.com/danjamesyee"><div>Github</div></a></div>
+                    <div><a href="https://github.com/danjamesyee"><div>LinkedIn</div></a></div>
                     <div>About</div>
                     <div>FAQ</div>
-                    <div>Original Site</div>
+                    <div><a href="https://cooking.nytimes.com/">Original Site</a></div>
                 </div>
             </div>
         </div>
