@@ -42,7 +42,7 @@ class SessionForm extends React.Component {
 
     handleKeyUp(e) {
 
-        if (e.keyCode) this.props.closeModal();
+        if (e.keyCode === 27) this.props.closeModal();
 
     }
 
