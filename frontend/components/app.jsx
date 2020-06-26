@@ -12,7 +12,9 @@ const App = () => (
         <Modal />
         <nav className="outer-nav"> 
             <div className="main-nav">
-                <Link to="/" className="main-title" style={{ textDecoration: 'none' }}><div >點 | Dim Cooking</div></Link>
+                <div className='hider'>
+                <Link to="/" className="main-title" style={{ textDecoration: 'none' }}><strong >點 | Dim Cooking</strong></Link>
+                </div>
                 <div className="search"></div>
                 <GreetingContainer className='greeting'/>  
             </div>

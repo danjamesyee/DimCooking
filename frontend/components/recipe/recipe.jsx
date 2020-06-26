@@ -34,7 +34,7 @@ class RecipePage extends React.Component {
             <div>
                 <div className="recipe-box">
                     <div className="recipe-title">{recipe.title}</div>
-                    <div className="author-name">Gilbert Bui</div>
+                    <div className="author-name">Daniel Yee</div>
                     <br/>
                     <div className='separator'></div>
                     <br/>
