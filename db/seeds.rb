@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
 
 User.destroy_all
 Recipe.destroy_all
@@ -44,6 +45,7 @@ recipe1 = Recipe.create(
     author_id: User.find_by(username: 'gilbert12').id)
 
 recipe1.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/hargow.jpg"), filename: 'hargow.jpg')
+
 
 recipe2 = Recipe.create(
     id: 2,
@@ -183,4 +185,4 @@ recipe4 = Recipe.create(
         Fry the cakes on both sides until golden and crispy. Serve with oyster sauce!'],
     author_id: User.find_by(username: 'thedaniel').id)
 
-recipe4.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/lobakgo.jpg"), filename: 'chasiubau.jpg')
+recipe4.photo.attach(io: File.open("/Users/danielyee/AppAcademy/dimcooking/app/assets/images/lobakgo.jpg"), filename: 'lobakgo.jpg')
