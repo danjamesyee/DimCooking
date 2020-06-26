@@ -73,7 +73,7 @@ class MainPage extends React.Component{
                         </span>
                 </Link>
                 
-                <h1>What to Cook This Week</h1>
+                <h1>What to Cook This Year</h1>
                 <h4>RECIPES, GUIDES AND MORE FOR THE YEAR OF 2020</h4>
                 <div id="separator-caro"></div>
                 <h3>Dan's Suggestions</h3>
