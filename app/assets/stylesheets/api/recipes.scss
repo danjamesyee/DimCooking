@@ -15,9 +15,10 @@ button:focus {outline:0;}
 }
 
 .recipe-box {
-    position: absolute;
-    width: 70%;
+    position: relative;
+    width: 60%;
     left: 20%;
+    top: 100px;
     padding-right: 15%;
 }
 
@@ -82,7 +83,7 @@ button:focus {outline:0;}
 }
 
 .carousel {
-    position: absolute;
+    // position: absolute;
     bottom: -130%;
     text-align: center;
     height: 100%;
@@ -92,32 +93,32 @@ button:focus {outline:0;}
 }
 
 .buttons-pos {
-    z-index: 9999;
-    position: absolute;
-    top: 180px;
-    left: 45%;
+    z-index: 9998;
+    position: relative;
+    
 
 }
 
 #next {
-    z-index: 9999;
+    z-index: 5999;
     position: relative;
-    left: 500%;
     width: 40px;
     height: 40px;
     font-size: 25px;
     color: grey;
-    
+    left: 440px;
+    top: 138px;
 }
 
 #prev {
-    z-index: 9999;
+    z-index: 5999;
     position: relative;
-    left: -500%;
     width: 40px;
     height: 40px;
     font-size: 25px;
     color: grey;
+    right: 440px;
+    top: 138px;
 }
 
 #prev:hover, #next:hover {
@@ -203,8 +204,9 @@ button:focus {outline:0;}
 
 .col {
     z-index: 9997;
-  height: 364px;
+  height: 454px;
   position: relative;
+  bottom: 150px;
   &:before,
   &:after {
       content: '';
@@ -245,7 +247,7 @@ button:focus {outline:0;}
 }
 
 .main-header {
-    position: absolute;
+    // position: absolute;
     top: 95%;
     left: 28%;
 }
@@ -268,6 +270,7 @@ button:focus {outline:0;}
     font-weight: 100;
     text-align: left;
     bottom: 150px;
+    left: 25%;
 }
 
 .main-header > h5 {
@@ -278,13 +281,15 @@ button:focus {outline:0;}
     font-weight: 100;
     color: grey;
     bottom: 190px;
+        left: 25%;
+
 
 }
 
 #separator-caro {
-    position: absolute;
-    top: 250px;
+    position: relative;
+    top: 20px;
     border-bottom: 4px solid black;
-    width: 100%;
-    margin: auto 0;
+    width: 40%;
+    margin: 0 auto;
 }

@@ -19,9 +19,7 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+
 
 
 
@@ -50,10 +48,14 @@ a {
   font-family: inherit;
 }
 
+.splash-wrap {
+  position: relative;
+}
+
 
 .footer {
-  position: absolute;
-  bottom: -224%;
+  position: relative;
+  top: 110px;
   width: 100%;
   height: 41%;
   background-color: black;
@@ -67,6 +69,7 @@ a {
   font-family: 'Nanum Myeongjo', serif;
   line-height: 1.5;
   font-size: 18px;
+  padding-bottom: 20px;
 }
 
 .footer > div, .footer > h1 {
@@ -80,12 +83,12 @@ a {
   width: 30%;
   font-size: 18px;
   position: relative;
-  top: 10%;
+  top: 26px;
   left: 15%;
 }
 
 .foo {
-  top: 10%
+  top: 5%
 }
 
 .foot-label > h1 {

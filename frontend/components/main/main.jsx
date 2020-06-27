@@ -15,6 +15,7 @@ class MainPage extends React.Component{
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
         this.props.fetchRecipes()
             .then( response =>
                 {this.setState({
@@ -58,7 +59,8 @@ class MainPage extends React.Component{
             <div className="body">
                 <Link to={`/recipes/${splashRecipe.id}`} className="splash" >
                     <img src={splashRecipe.photoUrl} width="100px" height="50px" />
-                        <span className="splash-name">
+                    <div className='splash-wrap'>
+                        <div className="splash-name">
                             <br/>
                             <br />
                             <br/>
@@ -66,11 +68,13 @@ class MainPage extends React.Component{
                             <div>A simple Dim Sum classic</div>
                             <br />
                             <div className='splash-text'>Daniel Yee</div>
-                        </span>
-                        <span className="dot">
+                        </div>
+                        
+                        <div className="dot">
                             <div className='dot-text'>RECIPE</div>
                             <div className='dot-text'>OF THE DAY</div>
-                        </span>
+                        </div>
+                        </div>
                 </Link>
                 <div className="main-header">
                     <h1>What to Cook This Year</h1>

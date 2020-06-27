@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-    <div>
+   
         <div className='footer'>
             <div className='flexer'>
                 
@@ -24,7 +24,7 @@ const Footer = () => (
             </div>
         </div>
         
-    </div>
+    
 )
 
 
