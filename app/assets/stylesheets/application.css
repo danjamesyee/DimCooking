@@ -88,7 +88,7 @@ a {
 }
 
 .foo {
-  top: 5%
+  top: 23px
 }
 
 .foot-label > h1 {
@@ -130,7 +130,7 @@ a {
 .learn > h1 {
   position: relative;
   color: white;
-  padding-bottom: 40px;
+  padding-bottom: 28px;
   padding-left: 10px;
 }
 
