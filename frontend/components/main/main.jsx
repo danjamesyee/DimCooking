@@ -10,7 +10,7 @@ class MainPage extends React.Component{
         this.state = {
             recipe: {},
             recipes: [],
-            count: 0
+            count: 2
         }
     }
 
@@ -20,7 +20,7 @@ class MainPage extends React.Component{
             .then( response =>
                 {this.setState({
                     recipes: Object.values(response.recipes),
-                    recipe: Object.values(response.recipes)[0]
+                    recipe: Object.values(response.recipes)[2]
                 })}
             )
     }
@@ -86,8 +86,8 @@ class MainPage extends React.Component{
                 
                     <div className='carousel'>
                         <div className="buttons-pos">
-                            <button onClick={this.prevRecipe} disabled={recipe.id === 1} id='prev'>&lt;</button>
-                            <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length} id='next'>&gt;</button>
+                            <button onClick={this.prevRecipe} disabled={recipe.id === 2} id='prev'>&lt;</button>
+                            <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length - 1} id='next'>&gt;</button>
                         </div>
                         
                         <div className="col">

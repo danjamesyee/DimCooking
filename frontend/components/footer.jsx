@@ -16,7 +16,7 @@ const Footer = () => (
                 <div className="learn">
                     <h1 className='foo'>LEARN MORE</h1>
                     <div><a href="https://github.com/danjamesyee"><div>Github</div></a></div>
-                    <div><a href="https://github.com/danjamesyee"><div>LinkedIn</div></a></div>
+                    <div><a href="https://www.linkedin.com/in/daniel-yee-6886441b0/"><div>LinkedIn</div></a></div>
                     <div>About</div>
                     <div>FAQ</div>
                     <div><a href="https://cooking.nytimes.com/">Original Site</a></div>

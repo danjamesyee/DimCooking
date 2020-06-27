@@ -35,7 +35,10 @@ padding:0;
 
 }
 
-
+.cheese {
+  height: 100%;
+  overflow: hidden;
+}
 .splash {
   color: inherit;
   text-decoration: none;
