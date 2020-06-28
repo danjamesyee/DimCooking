@@ -37,13 +37,14 @@ class CookingNoteForm extends React.Component {
         }
         return(
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form className= "note-form" onSubmit={this.handleSubmit}>
                     <div>{username}</div>
+                    
                     <textarea 
                         className='note-text' 
                         value={this.state.body} 
                         onChange={this.update('body')} 
-                        placeholder="Share your notes with other cooks or leave a private note"/>
+                        placeholder="Share your notes with other cooks"/>
                     <br/>
                     
                     <button type='submit'>{this.props.formType}</button>

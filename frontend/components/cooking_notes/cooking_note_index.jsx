@@ -23,6 +23,7 @@ class CookingNoteIndex extends React.Component {
         return (
             <div>
                 <CookingNoteForm />
+                <br/>
                 {cookingnotes.reverse().map((cookingnote) => 
                     <CookingNoteItem 
                         key={cookingnote.id} 

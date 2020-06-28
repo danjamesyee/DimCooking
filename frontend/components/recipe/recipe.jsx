@@ -58,16 +58,21 @@ class RecipePage extends React.Component {
                         <br/>
                         <br />
                             {ingredients}</div>
-                        <div className="preparation">PREPARATION
+                        <div className="preparation">
+                            <h5>PREPARATION</h5>
                         <br />
                             <br />
                             {preparation}</div>
                     </div>
+
+
+                    <div className='note-container'>
+                        <div className='note-title'>COOKING NOTES</div>
+                        <br/>
+                        <CookingNoteIndexContainer recipe={recipe} />
+                    </div>
                 </div>
-                <div>
-                    
-                    <CookingNoteIndexContainer recipe={recipe} />
-                </div>
+                
 
             </div>
         )

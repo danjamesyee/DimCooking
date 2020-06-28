@@ -35,6 +35,21 @@ padding:0;
 
 }
 
+h4,h5,h6 {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
 .cheese {
   display: inline;
   overflow-y: hidden;

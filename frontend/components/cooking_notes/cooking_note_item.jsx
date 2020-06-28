@@ -37,13 +37,17 @@ class CookingNoteItem extends React.Component {
             <div>
                 <div>
                     {!this.state.edit ? (
-                        <div>
-                            <div>{cookingnote.username}</div>
-                            <div>{cookingnote.body}</div>
+                        <div className='note-prof'>
+                        <span className="prof-dot"></span>
+                        <div className="note-item">
+                            <h4>{cookingnote.username}</h4>
+                            <h5>{cookingnote.body}</h5>
                             {buttons}
+                        </div>
                         </div>
                     ) : (<CookingNoteEdit cookingnote={cookingnote} handleEdit={this.handleEdit}/>)}
                 </div>
+                <br/>
             </div>
         )
     }

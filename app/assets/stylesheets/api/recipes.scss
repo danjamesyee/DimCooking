@@ -57,7 +57,7 @@ button:focus {outline:0;}
 .instructions {
     display: flex;
     justify-content: space-between;
-    font-family: nyt-karnak-display-130124,nyt-stymie,Georgia,"Times New Roman",serif;    
+    font-family: 'Bevan', cursive;
     font-size: 12px;
     font-weight: bold;
 }
@@ -72,6 +72,11 @@ button:focus {outline:0;}
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     line-height: 1.5;
 }
+
+.preparation > h5 {
+    font-family: 'Bevan', cursive;
+}
+
 .ingredient {
     font-family: 'Yantramanav', sans-serif;
     font-size: 16px;
