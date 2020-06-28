@@ -6,13 +6,10 @@ class CookingNoteIndex extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { }
-        // this.handleEdit = this.handleEdit.bind(this);
+        this.state = {}
     }
 
-    // handleEdit() {
-    //     this.setState({ edit: false })
-    // }
+
 
     componentDidMount() {
         this.props.fetchNotes();
@@ -20,19 +17,18 @@ class CookingNoteIndex extends React.Component {
 
     render () {
         
-        // let notes = this.props.cookingnotes.reverse() || []
-        // debugger
-        let { recipe, cookingnotes, users, deleteNote, currentUser } = this.props;
+
+        let {  cookingnotes, users, deleteNote, currentUser } = this.props;
 
         return (
             <div>
                 <CookingNoteForm />
-                {cookingnotes.reverse().map((cookingnote, idx) => 
+                {cookingnotes.reverse().map((cookingnote) => 
                     <CookingNoteItem 
                         key={cookingnote.id} 
                         cookingnote={cookingnote} 
                         deleteNote={deleteNote} 
-                        user={users[cookingnote.author_id]}
+                        
                         currentUser={currentUser}
                     />
                 )}

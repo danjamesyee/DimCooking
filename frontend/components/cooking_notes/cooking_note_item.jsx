@@ -22,13 +22,16 @@ class CookingNoteItem extends React.Component {
     }
 
     render() {
-        let { cookingnote, currentUser, user } = this.props;
-        const buttons = (
+        let { cookingnote, currentUser } = this.props;
+        let buttons;
+        if ( currentUser && currentUser.id === cookingnote.author_id ) { buttons = (
             <div>
                 <button onClick={() => this.setState({ edit: true })}>Edit</button>
                 <button onClick={this.handleDelete}>Delete</button>
-            </div>
-        )
+            </div> )
+        } else {
+            buttons = <div></div>
+        } 
 
         return (
             <div>
@@ -39,7 +42,7 @@ class CookingNoteItem extends React.Component {
                             <div>{cookingnote.body}</div>
                             {buttons}
                         </div>
-                    ) : (<CookingNoteEdit cookingnote={cookingnote} />)}
+                    ) : (<CookingNoteEdit cookingnote={cookingnote} handleEdit={this.handleEdit}/>)}
                 </div>
             </div>
         )

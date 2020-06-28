@@ -36,8 +36,8 @@ padding:0;
 }
 
 .cheese {
-  height: 100%;
-  overflow-y: visible;
+  display: inline;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 .splash {

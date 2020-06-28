@@ -3,15 +3,17 @@ import CookingNoteForm from './cooking_note_form';
 import { createNote, fetchNote, updateNote } from '../../actions/cooking_note_actions';
 import { withRouter } from 'react-router-dom';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
+    // debugger
     return {
-        cookingnote: null,
-        currentUser: state.entities.users[state.session.id]
+        cookingnote: { body: '', recipe_id: ownProps.match.params.recipeId },
+        currentUser: state.entities.users[state.session.id],
+        formType: 'Add Note'
     }
 };
 
 const mapDispatchToProps = dispatch => ({
-    createNote: (cookingnote) => dispatch(createNote(cookingnote))
+    handleNote: (cookingnote) => dispatch(createNote(cookingnote))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CookingNoteForm));

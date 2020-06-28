@@ -1,12 +1,12 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 class CookingNoteForm extends React.Component {
     constructor(props) {
         super(props)
         this.handleSubmit = this.handleSubmit.bind(this);
         this.update = this.update.bind(this);
-        this.state = { body: '', recipe_id: this.props.match.params.recipeId}
+        this.state = this.props.cookingnote
+        this.hideForm = this.hideForm.bind(this)
     }
 
     update(field) {
@@ -15,8 +15,17 @@ class CookingNoteForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createNote(this.state);
-        this.setState({body: ''})
+        this.props.handleNote(this.state)
+        this.setState({body: ''});
+        if (this.props.formType === 'Update') this.props.handleEdit();
+    }
+
+    hideForm() {
+        if (this.props.formType === 'Add Note') {
+            this.setState({ create: false, body: '' });
+        } else {
+            this.props.handleEdit();
+        }
     }
 
     render () {
@@ -26,7 +35,6 @@ class CookingNoteForm extends React.Component {
         } else {
             username = this.props.currentUser.username
         }
-        // debugger
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
@@ -37,7 +45,8 @@ class CookingNoteForm extends React.Component {
                         onChange={this.update('body')} 
                         placeholder="Share your notes with other cooks or leave a private note"/>
                     <br/>
-                    <button>Add Note</button>
+                    
+                    <button type='submit'>{this.props.formType}</button>
                 </form>
             </div>
         )
