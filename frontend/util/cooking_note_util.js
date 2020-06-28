@@ -20,7 +20,7 @@ export const createNote = (cookingnote) => {
 
 export const updateNote = (cookingnote) => {
     return $.ajax({
-        url: `/api/cookingnotes/${note.id}`,
+        url: `/api/cookingnotes/${cookingnote.id}`,
         method: 'PATCH',
         data: { cookingnote } 
     });
