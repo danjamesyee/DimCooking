@@ -1,6 +1,6 @@
 class Api::CookingnotesController < ApplicationController
 
-    before_action :require_logged_in, only: [:create, :update, :destroy]
+    # before_action :require_logged_in, only: [:create, :update, :destroy]
 
     def index
         @cookingnotes = CookingNote.all
@@ -13,7 +13,7 @@ class Api::CookingnotesController < ApplicationController
         if @cookingnote.save
             render :show
         else
-            render json: @cookingnote.errors.full_messages, status 422
+            render json: ['Note not created, try again!'], status: 400
         end
     end
 
@@ -27,7 +27,7 @@ class Api::CookingnotesController < ApplicationController
         if @cookingnote.update(note_params)
             render :show
         else
-            render json: @cookingnote.errors.full_messages, status: 422
+            render json: @cookingnote.errors.full_messages, status: 400
         end
     end
 
@@ -38,7 +38,7 @@ class Api::CookingnotesController < ApplicationController
         render :show
     end
 
-    private
+    
 
     def note_params
         params.require(:cookingnote).permit(:body, :recipe_id)

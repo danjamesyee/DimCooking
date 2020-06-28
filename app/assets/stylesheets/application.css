@@ -37,7 +37,7 @@ padding:0;
 
 .cheese {
   height: 100%;
-  overflow: hidden;
+  overflow-y: visible;
 }
 .splash {
   color: inherit;
