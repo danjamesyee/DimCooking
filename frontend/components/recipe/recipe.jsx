@@ -65,8 +65,8 @@ class RecipePage extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <CookingNoteFormContainer />
-                    <CookingNoteIndexContainer recipeId={recipe.id} />
+                    
+                    <CookingNoteIndexContainer recipe={recipe} />
                 </div>
 
             </div>

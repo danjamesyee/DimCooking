@@ -1,18 +1,18 @@
 import React from 'react';
-import CookingNoteEdit from './cooking_note_edit'
-import CookingNoteForm from './cooking_note_form';
+import CookingNoteItem from './cooking_note_item';
+import CookingNoteForm from './cooking_note_form_container';
 
 class CookingNoteIndex extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { edit: false }
-        this.handleEdit = this.handleEdit.bind(this);
+        this.state = { }
+        // this.handleEdit = this.handleEdit.bind(this);
     }
 
-    handleEdit() {
-        this.setState({ edit: false })
-    }
+    // handleEdit() {
+    //     this.setState({ edit: false })
+    // }
 
     componentDidMount() {
         this.props.fetchNotes();
@@ -20,21 +20,21 @@ class CookingNoteIndex extends React.Component {
 
     render () {
         
-        let notes = this.props.cookingnotes.reverse() || []
+        // let notes = this.props.cookingnotes.reverse() || []
         // debugger
+        let { recipe, cookingnotes, users, deleteNote, currentUser } = this.props;
+
         return (
             <div>
-                {notes.map((note, idx) => 
-                <div key={idx}>
-                    <div>{note.username}</div>
-                    <div>{note.body}</div>
-                    <button onClick={() => this.setState({edit: true})}>Edit</button>
-                    {this.state.edit ? (
-                        <div>
-                            <CookingNoteEdit cookingnote={note}/>
-                         </div>   
-                    ): (<div/>)}
-                </div>
+                <CookingNoteForm />
+                {cookingnotes.reverse().map((cookingnote, idx) => 
+                    <CookingNoteItem 
+                        key={cookingnote.id} 
+                        cookingnote={cookingnote} 
+                        deleteNote={deleteNote} 
+                        user={users[cookingnote.author_id]}
+                        currentUser={currentUser}
+                    />
                 )}
             </div>
         )
