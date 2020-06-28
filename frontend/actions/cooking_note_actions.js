@@ -1,4 +1,4 @@
-import * as CookingNoteUtil from './util/cooking_note_util'
+import * as CookingNoteUtil from '../util/cooking_note_util'
 
 export const RECEIVE_ALL_NOTES = 'RECEIVE_ALL_NOTES';
 export const RECEIVE_NOTE = 'RECEIVE_NOTE';
@@ -19,28 +19,28 @@ const removeNote = cookingnoteId => ({
     cookingnoteId
 });
 
-export const fetchNotes = () => dispatch => ({
-    CookingNoteUtil.fetchNotes()
+export const fetchNotes = () => dispatch => {
+    return CookingNoteUtil.fetchNotes()
         .then(cookingnotes => dispatch(receiveNotes(cookingnotes)));
-});
+};
 
-export const fetchNote = cookingnoteId => dispatch => ({
-    CookingNoteUtil.fetchNote()
+export const fetchNote = cookingnoteId => dispatch => {
+    return CookingNoteUtil.fetchNote()
         .then(cookingnote => dispatch(receiveNote(cookingnote)));
-});
+};
 
-export const createNote = cookingnote => dispatch => ({
-    CookingNoteUtil.createNote(cookingnote)
+export const createNote = cookingnote => dispatch => {
+    return CookingNoteUtil.createNote(cookingnote)
         .then(cookingnote => dispatch(receiveNote(cookingnote)));
-});
+};
 
-export const updateNote = cookingnote => dispatch => ({
-    CookingNoteUtil.updateNote(cookingnote)
+export const updateNote = cookingnote => dispatch => {
+    return CookingNoteUtil.updateNote(cookingnote)
         .then(cookingnote => dispatch(receiveNote(cookingnote)));
-});
+};
 
-export const deleteNote = cookingnoteId => dispatch => ({
-    CookingNoteUtil.deleteNote(cookingnoteId)
+export const deleteNote = cookingnoteId => dispatch => {
+    return CookingNoteUtil.deleteNote(cookingnoteId)
         .then(() => dispatch(removeNote(cookingnoteId)));
-});
+};
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import CookingNoteFormContainer from '../cooking_notes/cooking_note_form_container';
+import CookingNoteIndexContainer from '../cooking_notes/cooking_note_index_container'
 
 class RecipePage extends React.Component {
     
@@ -62,6 +64,11 @@ class RecipePage extends React.Component {
                             {preparation}</div>
                     </div>
                 </div>
+                <div>
+                    <CookingNoteFormContainer />
+                    <CookingNoteIndexContainer recipeId={recipe.id} />
+                </div>
+
             </div>
         )
     }

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import configureStore from './store/store';
 import Root from './components/root'
 import {fetchRecipes} from './actions/recipe_actions'
-import { fetchNotes, fetchNote, createNote, updateNote, deleteNote } from './util/cooking_note_util'
+import { fetchNotes, fetchNote, createNote, updateNote, deleteNote } from './actions/cooking_note_actions'
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
