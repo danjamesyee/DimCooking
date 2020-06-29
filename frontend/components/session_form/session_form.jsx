@@ -30,7 +30,7 @@ class SessionForm extends React.Component {
             username: 'gilbert12',
             password: '1234566'
         }).then(this.props.closeModal)
-        if (e.key === 'Enter') e.preventDefault();
+
         
     }
 

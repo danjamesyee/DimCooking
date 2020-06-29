@@ -25,7 +25,7 @@ html {
 
 html, body {
 
-
+height: 100%;
 
 margin:0;
 
@@ -43,6 +43,11 @@ h4,h5,h6 {
 	font: inherit;
 }
 
+#root {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 textarea {
     border: none;
     overflow: auto;
@@ -56,7 +61,7 @@ textarea {
   overflow-x: hidden;
 }
 .splash {
-  color: inherit;
+  color: inherit; 
   text-decoration: none;
 }
 
@@ -74,7 +79,6 @@ a {
 
 .footer {
   position: relative;
-  top: 110px;
   width: 100%;
   height: 41%;
   background-color: black;
@@ -129,6 +133,7 @@ a {
   width: 35%;
   position: relative;
   left: 9%;
+  padding: 10px;
 }
 
 .learn > h1 {
@@ -138,7 +143,10 @@ a {
 .learn > div{
   position: relative;
   
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+
   color: white;
   font-family: nyt-franklin,Arial,Helvetica,sans-serif;
   font-size: 14px;

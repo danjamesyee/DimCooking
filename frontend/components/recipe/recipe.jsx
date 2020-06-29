@@ -34,7 +34,7 @@ class RecipePage extends React.Component {
         }
         
         return (
-            <div>
+            
                 <div className="recipe-box">
                     <div className="recipe-title">{recipe.title}</div>
                     <div className="author-name">Daniel Yee</div>
@@ -74,7 +74,7 @@ class RecipePage extends React.Component {
                 </div>
                 
 
-            </div>
+            
         )
     }
 }

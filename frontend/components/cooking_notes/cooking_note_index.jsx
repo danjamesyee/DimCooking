@@ -18,7 +18,7 @@ class CookingNoteIndex extends React.Component {
     render () {
         
 
-        let {  cookingnotes, users, deleteNote, currentUser } = this.props;
+        let {  cookingnotes, deleteNote, currentUser } = this.props;
 
         return (
             <div>
@@ -29,7 +29,6 @@ class CookingNoteIndex extends React.Component {
                         key={cookingnote.id} 
                         cookingnote={cookingnote} 
                         deleteNote={deleteNote} 
-                        
                         currentUser={currentUser}
                     />
                 )}

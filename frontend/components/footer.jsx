@@ -8,18 +8,17 @@ const Footer = () => (
                 <div className='foot-label'>  
                     <h1 >ABOUT US</h1>
                     Dim Cooking is a clone of the New York Times Cooking website.
-                    It is a digital cookbook and cooking guide alike, available on 
-                    some platforms, that helps home cooks of every level discover, 
-                    save and organize the world’s best recipes, while also helping 
-                    them become better, more competent cooks.
+                    It was created by Daniel Yee, a software engineer based in San
+                    Francisco, CA. 
                 </div>
                 <div className="learn">
                     <h1 className='foo'>LEARN MORE</h1>
                     <div><a href="https://github.com/danjamesyee"><div>Github</div></a></div>
                     <div><a href="https://www.linkedin.com/in/daniel-yee-6886441b0/"><div>LinkedIn</div></a></div>
-                    <div>About</div>
-                    <div>FAQ</div>
                     <div><a href="https://cooking.nytimes.com/">Original Site</a></div>
+                    
+                    <div>FAQ</div>
+                    
                 </div>
             </div>
         </div>
