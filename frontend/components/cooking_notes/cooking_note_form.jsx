@@ -31,7 +31,7 @@ class CookingNoteForm extends React.Component {
     render () {
         let username;
         if (!this.props.currentUser) {
-            return null;
+            return <div className="not-logged-note">Please log in to leave a note</div>;
         } else {
             username = this.props.currentUser.username
         }
