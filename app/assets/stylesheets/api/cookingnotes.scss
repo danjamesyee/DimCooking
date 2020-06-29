@@ -47,6 +47,8 @@
 .note-item > h4 {
     padding-bottom: 5px;
     font-weight: 600;
+    display: flex;
+    font-size: 14px;
 }
 
 .note-item > h5 {
@@ -71,4 +73,12 @@
     border-bottom: 2px solid lightgrey;
     width: 65%;
     display: flex;
+}
+
+
+.time {
+    font-weight: 100;
+    position: relative;
+    left: 10px;
+    color: grey;
 }
