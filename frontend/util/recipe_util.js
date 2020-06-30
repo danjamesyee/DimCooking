@@ -1,8 +1,7 @@
-export const fetchRecipes = data => (
+export const fetchRecipes = () => (
     $.ajax({
         url: '/api/recipes',
         method: 'GET',
-        data
     })
 );
 

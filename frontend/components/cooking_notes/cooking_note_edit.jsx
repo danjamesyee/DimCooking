@@ -9,9 +9,7 @@ class CookingNoteEdit extends React.Component {
     render() {
         
         let { cookingnote, currentUser, handleEdit, deleteNote, handleNote } = this.props;
-        if (!cookingnote) {
-            return null;
-        }
+        
         return(
             <div>
                     <CookingNoteForm 

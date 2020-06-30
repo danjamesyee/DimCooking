@@ -20,13 +20,6 @@ class CookingNoteForm extends React.Component {
         if (this.props.formType === 'Update') this.props.handleEdit();
     }
 
-    hideForm() {
-        if (this.props.formType === 'Add Note') {
-            this.setState({ create: false, body: '' });
-        } else {
-            this.props.handleEdit();
-        }
-    }
 
     render () {
         let username;
