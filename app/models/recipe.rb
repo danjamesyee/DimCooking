@@ -5,5 +5,7 @@ class Recipe < ApplicationRecord
     belongs_to :user,
     foreign_key: :author_id
 
+    has_many :saved_recipes
+
     has_one_attached :photo
 end

@@ -9,6 +9,8 @@ class User < ApplicationRecord
     has_many :recipes,
     foreign_key: :author_id
 
+    has_many :saved_recipes
+
     def self.find_by_credentials(username, password)
         user = User.find_by(username: username)
 

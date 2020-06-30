@@ -1,7 +1,6 @@
 class SavedRecipe < ApplicationRecord
-    validates :recipe_id, :user_id, :cooked, presence: true
+    validates :recipe_id, :user_id, presence: true
     validates :cooked, inclusion: {in: [true, false]}
-    validates :recipe_id, :user_id, uniqueness: true
 
     belongs_to :user,
         foreign_key: :user_id
