@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :users, only: [:create, :update, :show]
     resources :recipes, only: [:index, :create, :show]
     resources :cookingnotes
+    resources :saved_recipes, only: [:index, :show, :create, :update, :destroy]
     resource :session, only: [:create, :destroy]
   end
 end

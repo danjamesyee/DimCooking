@@ -81,7 +81,7 @@ class MainPage extends React.Component{
                     <h4>RECIPES, GUIDES AND MORE FOR THE YEAR OF 2020</h4>
                     <div id="separator-caro"></div>
                     <h3>Dan's Suggestions</h3>
-                    <h5>Recipes selected by Daniel Yee, food editor of this website.</h5>
+                    <h5>Recipes selected by Daniel Yee, creator of this website.</h5>
                 </div>
                 
                     <div className='carousel'>
