@@ -25,7 +25,7 @@ export const fetchNotes = () => dispatch => {
 };
 
 export const fetchNote = cookingnoteId => dispatch => {
-    return CookingNoteUtil.fetchNote()
+    return CookingNoteUtil.fetchNote(cookingnoteId)
         .then(cookingnote => dispatch(receiveNote(cookingnote)));
 };
 

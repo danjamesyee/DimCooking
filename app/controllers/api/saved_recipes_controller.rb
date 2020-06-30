@@ -1,12 +1,11 @@
 class Api::SavedRecipesController < ApplicationController
     def index
-        @saved_recipes = SavedRecipes.all
+        @saved_recipes = SavedRecipe.all
         render :index
     end
 
     def create
         @saved_recipe = SavedRecipe.new(sr_params)
-        debugger
         @saved_recipe.user_id = current_user.id
         if @saved_recipe.save
             render :show

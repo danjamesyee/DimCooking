@@ -13,25 +13,26 @@ export const fetchSavedRecipe = (savedRecipeId) => (
 );
 
 
-export const createSavedRecipe = (savedRecipe) => (
-    $.ajax({
+export const createSavedRecipe = (saved_recipe) => {
+    // debugger
+    return $.ajax({
         url: '/api/saved_recipes',
         method: 'POST',
-        data: { savedRecipe }
-    })
-);
+        data: { saved_recipe }
+    });
+};
 
-export const updateSavedRecipe = (savedRecipe) => (
+export const updateSavedRecipe = (saved_recipe) => (
     $.ajax({
-        url: `/api/saved_recipes/${savedRecipe.id}`,
+        url: `/api/saved_recipes/${saved_recipe.id}`,
         method: 'PATCH',
-        data: { savedRecipe }
+        data: { saved_recipe }
     })
 );
 
 export const deleteSavedRecipe = (savedRecipeId) => (
     $.ajax({
-        url: `/api/saved_reicipes/${savedRecipeId}`,
+        url: `/api/saved_recipes/${savedRecipeId}`,
         method: 'DELETE'
     })
 );

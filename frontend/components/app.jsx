@@ -7,6 +7,8 @@ import NotFound from './routes/notFoundPage';
 import MainPage from './main/main_container'
 import RecipePage from './recipe/recipe_container';
 import Footer from './footer';
+import SavedRecipeContainer from './saved_recipes/saved_recipe_container'
+
 
 const App = () => (
     <div className="cheese">
@@ -26,6 +28,7 @@ const App = () => (
         <Switch>
                 <Route path='/' exact component={MainPage}/>
                 <Route path='/recipes/:recipeId' component={RecipePage}/>
+                <Route path='/saved_recipes' component={SavedRecipeContainer}/>
                 <Route component={NotFound} />
         </Switch>
         <Footer />

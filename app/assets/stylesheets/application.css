@@ -71,7 +71,9 @@ a {
   font-size: inherit;
   font-family: inherit;
 }
-
+.greeting-loggedin {
+  display: flex
+}
 .splash-wrap {
   position: relative;
 }

@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import configureStore from './store/store';
 import Root from './components/root'
-import {fetchRecipes} from './actions/recipe_actions'
-import { fetchNotes, fetchNote, createNote, updateNote, deleteNote } from './actions/cooking_note_actions'
+import { fetchSavedRecipes, fetchSavedRecipe, createSavedRecipe, updateSavedRecipe, deleteSavedRecipe } from './actions/saved_recipe_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -19,13 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         store = configureStore();
     }
-    window.fetchRecipes = fetchRecipes;
 
-    window.createNote = createNote;
-    window.fetchNote = fetchNote;
-    window.fetchNotes = fetchNotes;
-    window.deleteNote = deleteNote;
-    window.updateNote = updateNote;
+    window.createSavedRecipe = createSavedRecipe;
+    window.fetchSavedRecipe = fetchSavedRecipe;
+    window.fetchSavedRecipes = fetchSavedRecipes;
+    window.deleteSavedRecipe = deleteSavedRecipe;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
     const root = document.getElementById("root");

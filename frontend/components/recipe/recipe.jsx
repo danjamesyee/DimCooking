@@ -13,12 +13,16 @@ class RecipePage extends React.Component {
 
     componentDidMount() {
         this.props.fetchRecipe(this.props.match.params.recipeId);
+        this.props.fetchSavedRecipes();
         window.scrollTo(0, 0);
         // this.recipe = this.props.recipe;
     }
 
+   
+
     render() {
         // debugger
+        if (!this.props.savedRecipes) return null;
         let recipe = this.props.recipe || {title: '', ingredients: '', preparation: ''}
         let ingredients = []
         let preparation = []
@@ -32,7 +36,20 @@ class RecipePage extends React.Component {
                 <div key={i}> <strong>Step {i + 1}</strong><br /><small></small><br /> {step}<br /><br />  </div>
             )
         }
+        let saveRecipeButton;
+        const { currentUser, savedRecipes } = this.props
         
+        let savedRecipesOfUser = Object.values(savedRecipes).filter(savedRecipe => savedRecipe.userId = currentUser.id)
+        let currentSave = savedRecipesOfUser.find(sr => sr.recipe_id === recipe.id)
+        let recipeIds = savedRecipesOfUser.map(sr => sr.recipe_id)
+        if (!recipeIds.includes(recipe.id)) {
+            saveRecipeButton = <button
+                className="save-recipe-button"
+                onClick={() => this.props.createSavedRecipe({ recipe_id: recipe.id, cooked: false })}
+            >Save to Recipe Box</button>
+        } else {
+            saveRecipeButton = <button onClick={() => this.props.deleteSavedRecipe(currentSave.id)}>Saved</button>
+        }
         return (
             
                 <div className="recipe-box">
@@ -41,6 +58,7 @@ class RecipePage extends React.Component {
                     <br/>
                     <div className='separator'></div>
                     <br/>
+                    {saveRecipeButton}
                     <div className="recipe-show">
                         <div>{recipe.summary}</div>
                         <img src={recipe.photoUrl} width="450px" height="320px" />

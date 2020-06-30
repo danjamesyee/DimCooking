@@ -6,7 +6,6 @@ class CookingNoteForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.update = this.update.bind(this);
         this.state = this.props.cookingnote
-        this.hideForm = this.hideForm.bind(this)
     }
 
     update(field) {

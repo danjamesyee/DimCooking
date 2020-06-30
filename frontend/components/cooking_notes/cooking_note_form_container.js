@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CookingNoteForm from './cooking_note_form';
-import { createNote, fetchNote, updateNote } from '../../actions/cooking_note_actions';
+import { createNote } from '../../actions/cooking_note_actions';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
