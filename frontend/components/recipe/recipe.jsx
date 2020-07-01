@@ -38,18 +38,25 @@ class RecipePage extends React.Component {
         }
         let saveRecipeButton;
         const { currentUser, savedRecipes } = this.props
-        
-        let savedRecipesOfUser = Object.values(savedRecipes).filter(savedRecipe => savedRecipe.userId = currentUser.id)
+        let savedRecipesOfUser;
+        let loggedIn = <div></div>
+        if (!currentUser) {
+            savedRecipesOfUser = []
+            loggedIn = <div>Please log in to save</div>
+        } else {
+            savedRecipesOfUser = Object.values(savedRecipes).filter(savedRecipe => savedRecipe.userId = currentUser.id)
+        }
         let currentSave = savedRecipesOfUser.find(sr => sr.recipe_id === recipe.id)
         let recipeIds = savedRecipesOfUser.map(sr => sr.recipe_id)
         if (!recipeIds.includes(recipe.id)) {
             saveRecipeButton = <button
                 className="save-recipe-button"
                 onClick={() => this.props.createSavedRecipe({ recipe_id: recipe.id, cooked: false })}
-            >Save to Recipe Box</button>
+            ><img src='https://dimcooking-dev.s3-us-west-1.amazonaws.com/icon-bookmark-hover-outline.png' width='12px' height='18px'/>   Save to Recipe Box</button>
         } else {
-            saveRecipeButton = <button onClick={() => this.props.deleteSavedRecipe(currentSave.id)}>Saved</button>
+            saveRecipeButton = <button id="unsaved" onClick={() => this.props.deleteSavedRecipe(currentSave.id)}><img src='https://dimcooking-dev.s3-us-west-1.amazonaws.com/icon-bookmark-hover-fill.png' width='12px' height='18px' />  Saved</button>
         }
+        
         return (
             
                 <div className="recipe-box">
@@ -58,7 +65,10 @@ class RecipePage extends React.Component {
                     <br/>
                     <div className='separator'></div>
                     <br/>
-                    {saveRecipeButton}
+                    <div className='saving'>
+                        {saveRecipeButton}
+                        {loggedIn}
+                    </div>
                     <div className="recipe-show">
                         <div>{recipe.summary}</div>
                         <img src={recipe.photoUrl} width="450px" height="320px" />

@@ -13,7 +13,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 
     const personalGreeting = () => (
         <div className="greeting-loggedin">
-            <Link to="/saved_recipes" className="saved-button">YOUR RECIPE BOX</Link>
+            <Link to="/saved_recipes" id="saved-button">YOUR RECIPE BOX</Link>
             <div className="gear-dropdown-btn">
                 <i className="fas fa-cog"></i>
                 <div id="gear-dropdown" className="gear-dropdown">

@@ -145,7 +145,6 @@ background: white;
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     top: 0;
     background-color: white;
-    background: none!important;
     border-top: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
@@ -155,6 +154,9 @@ background: white;
     position: relative;
     right: 15px;
 
+}
+.nav-button:hover {
+    background-color: #F0F0F0;
 }
 
 .plain-text {
@@ -297,6 +299,7 @@ Link {
     top: 58px;
     object-fit: cover;
     object-position: 65% 25%;
+    max-height: 880px;
 }
 
 

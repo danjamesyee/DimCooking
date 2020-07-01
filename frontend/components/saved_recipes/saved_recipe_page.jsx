@@ -24,15 +24,30 @@ class SavedRecipePage extends React.Component {
         let savedRecipesOfUser = Object.values(savedRecipes).filter(savedRecipe => savedRecipe.userId = currentUser.id)
         let recipeIds = savedRecipesOfUser.map(sr => sr.recipe_id)
         let recipes = Object.values(this.props.recipes).filter(recipe => recipeIds.includes(recipe.id))
-        
+        // debugger
         return (
             <div className="saved-recipes">
-                {recipes.map((recipe, idx) => 
-                <Link to={`/recipes/${recipe.id}`} key={recipe.id} >
-                <div key={idx}>
-                    {recipe.title}
-                    <img className="saved-photo" src={recipe.photoUrl} width='100px' heigh='50px'/>
-                </div></Link>)}
+                <h2>Saved Recipes</h2>
+                <h4>{recipes.length} recipes</h4>
+                <div className="flex-recipes">
+                {recipes.map((recipe, idx) =>
+                    <div className="saved-outer-box" key={recipe.id}>
+                        <div className='saved-recipe-box'> 
+                        <div key={idx} >
+                            <Link to={`/recipes/${recipe.id}`} key={recipe.id}  >
+                                <img className="saved-photo" src={recipe.photoUrl} width='250px' height='160px' />
+                            
+                            <br />
+                            <h5>{recipe.title}</h5>
+                            </Link>
+                            <button 
+                                className='save-rec-onpage' 
+                                onClick={() => this.props.deleteSavedRecipe(savedRecipesOfUser.find(sr => sr.recipe_id === recipe.id).id)}>
+                                <img src='https://dimcooking-dev.s3-us-west-1.amazonaws.com/icon-bookmark-hover-fill.png' width='12px' height='18px' />
+                            </button>
+                            </div></div></div>)}
+                </div>
+                
             </div>
         )
     }
