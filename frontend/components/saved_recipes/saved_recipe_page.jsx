@@ -24,7 +24,6 @@ class SavedRecipePage extends React.Component {
         let savedRecipesOfUser = Object.values(savedRecipes).filter(savedRecipe => savedRecipe.userId = currentUser.id)
         let recipeIds = savedRecipesOfUser.map(sr => sr.recipe_id)
         let recipes = Object.values(this.props.recipes).filter(recipe => recipeIds.includes(recipe.id))
-        // debugger
         return (
             <div className="saved-recipes">
                 <h2>Saved Recipes</h2>

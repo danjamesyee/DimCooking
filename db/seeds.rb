@@ -28,9 +28,13 @@ daniel_user = User.create(username: 'thedaniel', password: 'password')
             dim sum item of all time. At least, I wouldn’t be surprised if they were. 
             Whatever you do, don’t ask why it took me this long to post this recipe…
             Oh heck, if you insist…", 
-    ingredients: "['1/2 pound raw shrimp, peeled', '1 teaspoon oyster sauce', 
+    ingredients: ['1/2 pound raw shrimp, peeled', '1 teaspoon oyster sauce', 
         '1 tablespoon vegetable oil', '1/4 teaspoon white pepper', 
-        '1 teaspoon sesame oil', '1/4 teaspoon salt']", 
+        '1 teaspoon sesame oil', '1/4 teaspoon salt','1 teaspoon sugar',
+        '1/2 teaspoon ginger (minced)','1/4 cup bamboo shoots (finely chopped)',
+        '1 cup wheat starch', '1/2 cup cornstarch (or tapioca starch)', 
+        '1 1/4 cups boiling water (add an additional 1 to 2 teaspoons in dryer climates)',
+        '3 teaspoons lard (or oil)'], 
     preparation: ['Mix everything (except the bamboo) together; whip in one 
         direction for a few minutes until the mixture starts to look sticky. 
         Now add the chopped bamboo shoots, and mix everything together. 
@@ -105,7 +109,7 @@ recipe3 = Recipe.create(
         time. We’ve had lots of questions from readers on how to make steamed 
         buns, and for good reason. This great variation is a super star on dim 
         sum tables, enjoyed by people of all ages.",
-    ingredients: ['1 teaspoon active dry yeast', '¾ cup warm water', 
+    ingredients: ['1 teaspoon active dry yeast', '3/4 cup warm water', 
         '2 cups all-purpose flour', '1 cup cornstarch', '5 tablespoons sugar',
         '1/4 cup canola or vegetable oil', '2 1/2 teaspoons baking powder', 
         '1 tablespoon oil', '1/3 cup shallots or red onion (finely chopped)', 
@@ -158,7 +162,7 @@ recipe4 = Recipe.create(
         '3-5 dried shiitake mushrooms (washed, soaked, and chopped)', 
         '1 Chinese sausage (diced)', '1 scallion (chopped)', 
         '1 1/4 cups rice flour (130 grams)', '1 tablespoon cornstarch (8 grams)',
-        '½ teaspoon salt', '½ teaspoon sugar', 'white pepper (to taste)'],
+        '1/2 teaspoon salt', '1/2 teaspoon sugar', 'white pepper (to taste)'],
     preparation: ['Add the grated turnip and 1 cup water to a wok or large pan, 
         and bring to a simmer. Simmer for about 10 minutes, stirring occasionally 
         so the turnip does not brown. The turnip will produce liquid, 
@@ -264,9 +268,9 @@ recipe6 = Recipe.create(
         '15 gm shiitake mushrooms, soaked and finely chopped', '15 gm sweetened 
         preserved radish, soaked in salted water and finely chopped', '125 gm yam bean, peeled and diced', 
         '75 gm chives, finely chopped', '1/2 cup chopped coriander, finely chopped',
-        '30 gm roast peanuts, reserve for wrapping in the last minute', '½ tsp light soy sauce',
-        '½ tsp sugar', '160 gm wheat starch', '50 gm potato starch', '⅛ tsp salt', 
-        '½ tsp sugar', '500 ml boiling water', '200 gm tapioca flour', '2 tsp oil'],
+        '30 gm roast peanuts, reserve for wrapping in the last minute', '1/2 tsp light soy sauce',
+        '1/2 tsp sugar', '160 gm wheat starch', '50 gm potato starch', '⅛ tsp salt', 
+        '1/2 tsp sugar', '500 ml boiling water', '200 gm tapioca flour', '2 tsp oil'],
     preparation: ['Mix the pork with marinade. Set aside for about 30 minutes. 
         Heat oil in a wok over medium-high heat. Stir fry the pork until cooked. Set aside.',
         'Add some oil in the wok. Saute the dried shrimps, shiitake mushrooms and 

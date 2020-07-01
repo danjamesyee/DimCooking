@@ -14,7 +14,6 @@ export const fetchSavedRecipe = (savedRecipeId) => (
 
 
 export const createSavedRecipe = (saved_recipe) => {
-    // debugger
     return $.ajax({
         url: '/api/saved_recipes',
         method: 'POST',

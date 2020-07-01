@@ -4,7 +4,6 @@ import { createNote } from '../../actions/cooking_note_actions';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
     return {
         cookingnote: { body: '', recipe_id: ownProps.match.params.recipeId },
         currentUser: state.entities.users[state.session.id],

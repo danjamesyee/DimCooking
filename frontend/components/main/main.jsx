@@ -28,9 +28,7 @@ class MainPage extends React.Component{
     nextRecipe() {
         
         event.preventDefault()
-        // const recIdx = this.state.recipe.id + 1;
         let count = this.state.count += 1;
-        // debugger
         this.setState({
             recipe: this.state.recipes[count]
         })
@@ -50,11 +48,9 @@ class MainPage extends React.Component{
         if (this.props.recipes.length === 0) {
             return null;
         } 
-        // debugger;
         const { recipe, recipes } = this.state
 
         const splashRecipe = recipes[1] || {}
-        // debugger;
         return (
             <div className="body">
                 <Link to={`/recipes/${splashRecipe.id}`} className="splash" >

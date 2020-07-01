@@ -21,7 +21,6 @@ class RecipePage extends React.Component {
    
 
     render() {
-        // debugger
         if (!this.props.savedRecipes) return null;
         let recipe = this.props.recipe || {title: '', ingredients: '', preparation: ''}
         let ingredients = []

@@ -24,7 +24,6 @@
 //     }
 
 //     render () {
-//         debugger
 //         // let recipes = this.props.recipes || [1]
 //         // let recipe = this.props.recipe[0] || {id: '', length: '', photoUrl: ''}
 //         return (

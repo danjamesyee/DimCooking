@@ -86,8 +86,8 @@ class CookingNoteItem extends React.Component {
                         <div className='note-prof'>
                         <span className="prof-dot"></span>
                         <div className="note-item">
-                                <h4>{cookingnote.username}  <div className="time">|&nbsp;&nbsp;{time}</div></h4>
-                            
+                            <h4>{cookingnote.username}  <div className="time">|&nbsp;&nbsp;{time}</div></h4>
+                   
                             <h5>{cookingnote.body}</h5>
                             {buttons}
                         </div>
