@@ -7,5 +7,8 @@ class Recipe < ApplicationRecord
 
     has_many :saved_recipes
 
+    has_many :cookingnotes,
+        foreign_key: :recipe_id
+
     has_one_attached :photo
 end

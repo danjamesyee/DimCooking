@@ -49,8 +49,8 @@ class MainPage extends React.Component{
             return null;
         } 
         const { recipe, recipes } = this.state
-
-        const splashRecipe = recipes[1] || {}
+        // debugger
+        const splashRecipe = recipes[0] || {}
         return (
             <div className="body">
                 <Link to={`/recipes/${splashRecipe.id}`} className="splash" >
@@ -82,20 +82,20 @@ class MainPage extends React.Component{
                 
                     <div className='carousel'>
                         <div className="buttons-pos">
-                            <button onClick={this.prevRecipe} disabled={recipe.id === 2} id='prev'>&lt;</button>
-                            <button onClick={this.nextRecipe} disabled={recipe.id === recipes.length - 1} id='next'>&gt;</button>
+                            <button onClick={this.prevRecipe} disabled={recipe.idx === 1} id='prev'>&lt;</button>
+                            <button onClick={this.nextRecipe} disabled={recipe.idx === recipes.length - 1} id='next'>&gt;</button>
                         </div>
                         
                         <div className="col">
-                            <div className={`cards-slider active-slide-${recipe.id}`}>
+                            <div className={`cards-slider active-slide-${recipe.idx}`}>
                                 <div className="cards-slider-wrapper" style={{
-                                    'transform': `translateX(-${recipe.id*(100/recipes.length)}%)` 
+                                    'transform': `translateX(-${recipe.idx*(100/recipes.length)}%)` 
                                 }}>
                                     {
                                     recipes.map((recipe) => 
                                     <Link to={`/recipes/${recipe.id}`} key={recipe.id}>
                                     <div className="caro-container"> 
-                                                <img src={recipe.photoUrl} id={`card-${recipe.id}`} className="card" width="250px" height="170px" />
+                                                <img src={recipe.photoUrl} id={`card-${recipe.idx}`} className="card" width="250px" height="170px" />
                                         <div className='carousel-title'>{recipe.title}</div>
                                         <div className='author-name-c'>By Daniel Yee</div>
                                     </div>

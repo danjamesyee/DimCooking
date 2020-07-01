@@ -17,7 +17,7 @@ const Footer = () => (
                     <div><a href="https://www.linkedin.com/in/daniel-yee-6886441b0/"><div>LinkedIn</div></a></div>
                     <div><a href="https://cooking.nytimes.com/">Original Site</a></div>
                     
-                    <div>FAQ</div>
+                    <div></div>
                     
                 </div>
             </div>

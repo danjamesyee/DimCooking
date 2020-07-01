@@ -18,7 +18,7 @@ daniel_user = User.create(username: 'thedaniel', password: 'password')
 
 
     recipe1 = Recipe.create( 
-    id: 1,
+    
     idx: 0,
     title: "Shrimp Dumplings(蝦餃)", 
     summary: "A simple Dim Sum classic. At dim sum houses, the server with the 
@@ -57,7 +57,7 @@ daniel_user = User.create(username: 'thedaniel', password: 'password')
 
 
 recipe2 = Recipe.create(
-    id: 2,
+    
     idx: 1,
     title: "Sticky Rice Lotus Leaf Wraps(糯米雞)",
     summary: "Every time our cousins visit from Buffalo, we have dim sum on the
@@ -97,7 +97,7 @@ recipe2 = Recipe.create(
     author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/RecipeImages/nomaigai.jpg"), filename: 'nomaigai.jpg')
 
 recipe3 = Recipe.create(
-    id: 3,
+    
     idx: 2,
     title: "Steamed BBQ Pork Buns(叉烧包)",
     summary: "Our baked cha siu bao is to this day one of the recipes that 
@@ -150,7 +150,7 @@ recipe3 = Recipe.create(
 
 
 recipe4 = Recipe.create(
-    id: 4,
+    
     idx: 3,
     title: 'Turnip Cake(蘿蔔糕)',
     summary: 'This savory turnip cake (sometimes called radish) lo bak go is a 
@@ -195,7 +195,7 @@ recipe4 = Recipe.create(
 
     
 recipe5 = Recipe.create(
-    id: 5,
+    
     idx: 4,
     title: 'Shu Mai(燒賣)',
     summary: 'If you are vaguely familiar with these steamed pork dumplings, 
@@ -252,7 +252,7 @@ recipe5 = Recipe.create(
     author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/RecipeImages/siumai.jpeg"), filename: 'siumai.jpg')
 
 recipe6 = Recipe.create(
-    id: 6,
+    
     idx: 5,
     title: 'Teochew Dumpling(潮州粉粿)',
     summary: 'This popular Chinese dim-sum, Teochew dumplings can be made at home. 
@@ -291,6 +291,125 @@ recipe6 = Recipe.create(
         Repeat this step to finish wrapping the filling.', 'Line a baking paper in a steamer. 
         Steam dumplings over high heat for about 8 to 10 minutes. Serve immediately with soy sauce and chilli sauce.'],
     author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/RecipeImages/teochew.jpeg"), filename: 'teochew.jpg')
+
+
+
+    
+recipe7 = Recipe.create(
+    
+    idx: 6,
+    title: 'Egg Tart(蛋撻)',
+    summary: 'The egg tart started being sold in the early 20th century in 
+        Guangzhou, Guangdong province, inspired by the pastel de nata, 
+        which was already famous in England, and the English custard tart. 
+        Guangzhou\'s status as the only port accessible to foreign traders 
+        led to the development of Cantonese cuisine having many outside influences.
+        As Guangzhou\'s economy grew from trade and interaction with Britain, 
+        pastry chefs at the Western-style department stores in the city were 
+        asked to invent new pastries weekly to attract customers from competitors. 
+        The egg tart, featuring a lard-based puff pastry crust and a filling similar 
+        to steamed egg pudding (燉蛋), was invented by a department store for one of these 
+        "Weekly Special" competitions. The Zhen Guang Restaurant in Guangzhou 
+        is also credited with inventing the Chinese egg tart.',
+    ingredients: ['1 and 1/2 cups all purpose flour', 'A pinch of salt', '1/2 cup sugar, 
+        diluted in 1 cup/250ml hot water', '1 tablespoon sugar', 
+        '14 tablespoons unsalted butter', '2 tablespoons cold water', '3 eggs',
+        '1/2 cup evaporated milk', '1 teaspoon vanilla essence'],
+    preparation: ['In a large bowl, add the flour, salt, and 1 tablespoon of sugar. 
+        Mix in butter with a fork until it is in small crumbs. 
+        Add 2 tablespoons of cold water (or a little more) to bring the dough 
+        together. Cover the dough and refrigerate for 20 minutes.', 'Place the 
+        dough onto a lightly floured working surface. Slightly knead and roll 
+        the dough with a rolling pin to form an 8 x 20 inch (20x50cm) rectangle.', 
+        'Fold the top third of the dough down to the center, then the bottom 
+        third up and over the remaining dough to form a square. Give the dough 
+        a quarter turn and roll out the dough again to obtain a rectangle. 
+        Fold the same way as in the prior step. Cover, and refrigerate for 30 minutes.',
+        'Whisk the eggs and evaporated milk. Then incorporate the sugar water, 
+        vanilla and continue to whisk. Strain the mixture through a fine sieve.', 
+        'Preheat oven to 400F/200C', 'Roll out the dough to a thickness of about 
+        1/4 inch (5mm). Cut circles the size of your tart molds. Press the dough 
+        into the molds all the way up to the edges. Place the tart molds on a 
+        baking sheet.', 'Fill each empty pastry shell almost to the top. 
+        Transfer the baking sheet to the oven and bake for 15 minutes.', 'Then, 
+        reduce the temperature to 350F/180C, and bake for another 12 minutes, 
+        until the custard is set. Leave the oven door ajar for 5 more minutes 
+        before removing the egg tarts from the oven.'],
+    author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/RecipeImages/dantat.jpeg"), filename: 'dantat.jpg')
+
+
+recipe8 = Recipe.create(
+    
+    idx: 7,
+    title: 'Cheung Fun(腸粉)',
+    summary: 'Cheung fun (Cantonese steamed rice noodles) is one of my 
+        favorite breakfast dishes. You may find lots of sub-versions if 
+        you visit Guangdong province. With similar methods, people use different 
+        flour mixture and water ration to adjust the thickness, 
+        transparence and elasticity of Cheung fun.',
+    ingredients: ['1 cup rice flour', '1/3 cup corn starch', '50 g wheat starch', 
+        '500 ml water', 'a tiny pinch of salt', '1 tbsp. vegetable oil', 
+        '1/2 cup chopped shrimp', '1/3 cup chopped green onion', 
+        '1/2 tbsp. oyster sauce', '1/2 tbsp. dark soy sauce', '2 tbsp. light soy sauce',
+        '2 tbsp. water', '1 tsp. rock sugar', '1/2 tbsp. sesame oil'],
+    preparation: ['In a large bowl, mix rice flour, cornstarch, wheat starch, 
+        salt oil and water. Stir well to make sure the batter is well mixed. 
+        Set aside for 10 minutes.', 'Prepare a rectangle or square pan and a 
+        large wok that can hold the pan. Bring enough water to a boiling and 
+        then place your pan in.', 'In a small bowl, pour a small amount of oil 
+        and then brush the steaming pan with a very very thin layer of oil and 
+        then pour the batter in. (I pour around 3 tablespoons of batter each 
+        time and it should spread to form a very thin layer at the bottom). 
+        Make it even and then steam for 1 minute until the batter firms, 
+        then sprinkle shrimp and green onions. Re-steam for 2 minutes over 
+        high fire.', 'Transfer out, use a knife to separate the edges from the 
+        pan firstly and then roll it up to a 2-3cm wide tube. If you prefer, 
+        you can cut the tube into one-bite size sections.', 'In a saucepan, 
+        add all the ingredients expect sesame oil and heat to boil. Then turn 
+        down the heat and let it simmer for 3-5 minutes. Add sesame oil and 
+        transfer out to cool down.'],
+    author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/RecipeImages/cheungfun.jpg"), filename: 'cheungfun.jpg')
+
+
+recipe9 = Recipe.create(
+    
+    idx: 8,
+    title: 'Deep Fried Taro Dumpling Puffs(芋角)',
+    summary: 'Crispy taro puffs, or "wu gok" as they\'re known in 
+        Cantonese, are also sometimes referred to as "phoenix tail 
+        crispy dumplings". At traditional dim sum restaurants, the chef 
+        may sometimes cover the wu gok in phoenix tail shrimp, which is 
+        where this name comes from. Remember that it cannot be too crispy, 
+        so as to ensure its phoenix lifelike quality.',
+    ingredients: ['1.32 pounds (600 grams) peeled taro', 
+        '2/3 cup (150 grams) boiling water','2 teaspoons five-spice powder', 
+        '2 teaspoons (8 grams) chicken bouillon', 
+        '1 and 1/4 cups (150 grams) wheat flour', '5.29 ounces (150 grams) lard', 
+        '1 teaspoon (4 grams) salt', '2 salted hardboiled egg yolk', 
+        '5.29 ounces (150 grams) white mushroom, blanched and diced', 
+        '1.32 pounds (600 grams) diced chicken, blanched', '10.58 ounces (300 grams) diced shrimp, blanched',
+        '5.29 ounces (150 grams) diced dried shiitake mushrooms, blanched',
+        '4 teaspoons (19 grams) crushed garlic', '4 teaspoons (19 grams) dried crushed onion', 
+        '6 eggs, beaten', '2 teaspoons (8 grams) salt', '3 teaspoons (15 grams) chicken bouillon', 
+        '2 tablespoons (23 grams) sugar', '1 tablespoon light soy sauce', '2 tablespoons oyster sauce', 
+        '2 and 1/2 cups (600 grams) stock', '1 teaspoon ground pepper', '1 and 2/3 tablespoons (23 grams) sesame oil', 
+        '6 tablespoons (57 grams) potato starch', '1/3 cup (75 grams) water'],
+    preparation: ['Heat oil in pot. Fry crushed garlic and dried crushed onion 
+    until fragrant. Add all filling ingredients (aside from the eggs), 
+        and fry until fragrant. Sprinkle a dash of cooking wine. Add seasoning 
+        ingredients and bring to a boil. Add potato starch and water until it 
+        achieves a thick consistency. Fry egg yolk. Scoop out and let cool.', 
+        'Use boiling water to knead wheat flour into dough. Chop peeled taro 
+        into slices. Place into steamer basket and steam over high heat 20 minutes. 
+        Crush. Add salt, chicken bouillon, five-spice powder, and the wheat flour 
+        dough. Stir evenly. Then add salted hardboiled egg yolks and lard. Stir 
+        thoroughly. Refrigerate for 30 minutes. This is the taro skin.', 
+        'Separate taro skin into small circular wraps approximately 0.81 ounce 
+        (23 grams) each. Add about 0.81 ounce (23 grams) of filling to these and 
+        form into a dumpling shape, thus making the wu gok ready to be cooked.', 
+        'Heat oil to 392 °F (200 °C). Add wu gok. Fry until golden brown and crispy. 
+        Remove from pot and strain away excess oil.'],
+    author_id: User.find_by(username: 'thedaniel').id).photo.attach(io: open("https://dimcooking-dev.s3-us-west-1.amazonaws.com/RecipeImages/wugok.jpeg"), filename: 'wugok.jpeg')
 
 
 
