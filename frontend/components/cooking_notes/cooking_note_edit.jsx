@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { updateNote, deleteNote } from '../../actions/cooking_note_actions';
+import { updateNote } from '../../actions/cooking_note_actions';
 import CookingNoteForm from './cooking_note_form'
 
 class CookingNoteEdit extends React.Component {
