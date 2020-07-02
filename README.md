@@ -28,7 +28,7 @@ Dim Cooking is a cooking website centered around Dim Sum while also drawing heav
 
 ### User Authentication
 
-![Log of site](https://dimcooking-dev.s3-us-west-1.amazonaws.com/readme/login.gif)
+![Log of site](https://github.com/danjamesyee/dimcooking/blob/master/app/assets/images/login.gif?raw=true)
 
   * Users can sign up and create an account on Dim Cooking, and login to view saved recipes
   * Login and sign up forms are rendered on modal components made using React.js and CSS
