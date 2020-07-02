@@ -36,12 +36,12 @@ class RecipePage extends React.Component {
             )
         }
         let saveRecipeButton;
-        const { currentUser, savedRecipes } = this.props
+        const { currentUser, savedRecipes, openModal } = this.props
         let savedRecipesOfUser;
         let loggedIn = <div></div>
         if (!currentUser) {
             savedRecipesOfUser = []
-            loggedIn = <div>Please log in to save</div>
+            loggedIn = <div><div onClick={() => openModal('login')}>Please log in to save</div></div>
         } else {
             savedRecipesOfUser = Object.values(savedRecipes).filter(savedRecipe => savedRecipe.userId = currentUser.id)
         }
