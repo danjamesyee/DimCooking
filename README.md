@@ -5,7 +5,7 @@
 
 
 
-![Gif of site](https://dimcooking-dev.s3-us-west-1.amazonaws.com/readme/splash.gif)
+![Gif of site](https://github.com/danjamesyee/dimcooking/blob/master/app/assets/images/gifofsite.gif?raw=true)
 
 
 ## Background
