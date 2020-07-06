@@ -1,40 +1,35 @@
-import React from 'react';
-import CookingNoteItem from './cooking_note_item';
-import CookingNoteForm from './cooking_note_form_container';
+import React from "react";
+import CookingNoteItem from "./cooking_note_item";
+import CookingNoteForm from "./cooking_note_form_container";
 
 class CookingNoteIndex extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
+  componentDidMount() {
+    this.props.fetchNotes();
+  }
 
+  render() {
+    let { cookingnotes, deleteNote, currentUser } = this.props;
 
-
-    componentDidMount() {
-        this.props.fetchNotes();
-    }
-
-    render () {
-        
-
-        let {  cookingnotes, deleteNote, currentUser } = this.props;
-
-        return (
-            <div>
-                <CookingNoteForm />
-                <br/>
-                {cookingnotes.reverse().map((cookingnote) => 
-                    <CookingNoteItem 
-                        key={cookingnote.id} 
-                        cookingnote={cookingnote} 
-                        deleteNote={deleteNote} 
-                        currentUser={currentUser}
-                    />
-                )}
-            </div>
-        )
-    }
+    return (
+      <div>
+        <CookingNoteForm />
+        <br />
+        {cookingnotes.reverse().map((cookingnote) => (
+          <CookingNoteItem
+            key={cookingnote.id}
+            cookingnote={cookingnote}
+            deleteNote={deleteNote}
+            currentUser={currentUser}
+          />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default CookingNoteIndex;
