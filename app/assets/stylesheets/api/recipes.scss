@@ -180,26 +180,6 @@ button:focus {outline:0;}
     }
 }
 
-// .cards-slider.active-slide-1 #card-1 {
-//     opacity: 1;
-// }
-
-// .cards-slider.active-slide-0 #card-0 {
-//     opacity: 1;
-// }
-
-// .cards-slider.active-slide-2 #card-2 {
-//     opacity: 1;
-// }
-
-// .cards-slider.active-slide-3 #card-3 {
-//     opacity: 1;
-// }
-
-// .cards-slider.active-slide-4 #card-4 {
-//     opacity: 1;
-// }
-
 
 .cards-slider {
     position: relative;
@@ -208,7 +188,7 @@ button:focus {outline:0;}
 }
 
 .col {
-    z-index: 9997;
+  z-index: 9997;
   height: 454px;
   position: relative;
   bottom: 150px;
