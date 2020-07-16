@@ -95,6 +95,8 @@ Dim Cooking is a cooking website centered around Dim Sum while also drawing heav
  
  ### Recipe Show and Cooking Notes
  
+ ![recipeshow](https://github.com/danjamesyee/dimcooking/blob/master/app/assets/recipeshow.gif?raw=true)
+ 
    * Users can view each show page
    * Recipes show ingredients, preparation, and save button
    * Nav bar sticks to the top of the page on scroll
@@ -102,6 +104,8 @@ Dim Cooking is a cooking website centered around Dim Sum while also drawing heav
    * Users can edit and delete their own recipes
    
  ### Saved Recipes
+ 
+ ![recipesave](https://github.com/danjamesyee/dimcooking/blob/master/app/assets/images/saved.gif?raw=true)
  
    * Save button appears on recipe show page
    * Users can access saved recipes and see their own saved recipes
