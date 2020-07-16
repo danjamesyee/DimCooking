@@ -101,3 +101,16 @@ Dim Cooking is a cooking website centered around Dim Sum while also drawing heav
    * Cooking notes allow discussion of recipes between users
    * Users can edit and delete their own recipes
    
+ ### Saved Recipes
+ 
+   * Save button appears on recipe show page
+   * Users can access saved recipes and see their own saved recipes
+   * Users can save and unsave from show page or saved recipes page
+   * Users can only save recipes if logged in
+   
+ ### Navigation Bar
+ 
+   * The buttons change based on login status
+   * Navigation bar sticks to the top of the page
+   * Located in it's own component for cleaner formatting
+   
