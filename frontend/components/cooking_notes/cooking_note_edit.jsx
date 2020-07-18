@@ -33,9 +33,12 @@ const mapStateToProps = (state, ownProps) => ({
   currentUser: state.entities.users[state.session.id],
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  handleNote: (note) => dispatch(updateNote(note)),
-  deleteNote: (note) => dispatch(deleteComment(commentId)),
-});
+const mapDispatchToProps = (dispatch) => {
+  debugger;
+  return {
+    handleNote: (note) => dispatch(updateNote(note)),
+    deleteNote: () => dispatch(deleteComment(commentId)),
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CookingNoteEdit);
