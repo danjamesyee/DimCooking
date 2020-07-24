@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- button {
-     border: none;
- }
+button {
+  border: none;
+}
 
- .modal-background {
+.modal-background {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -24,9 +24,9 @@
 }
 
 .link-button {
-    background: none!important;
+  background: none !important;
   border: none;
-  padding: 0!important;
+  padding: 0 !important;
   /*optional*/
   font-family: arial, sans-serif;
   /*input has OS specific font-family*/
@@ -35,7 +35,7 @@
 }
 
 .drop-button {
-background: white;
+  background: white;
   border: none;
   padding: 5px;
   padding-bottom: 7px;
@@ -50,311 +50,300 @@ background: white;
   color: rgb(227, 61, 38);
 }
 .drop-button:hover {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 .other-form {
-    text-align: center;
+  text-align: center;
 }
 
 .login-form-container {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login-label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .login-image {
-    padding-left: 8px;
-    padding-right: 9px;
-    font-family: nyt-cheltenham,Georgia,"Times New Roman",serif;
-    font-size: 22px;
-    // background-image: url('https://dimcooking-dev.s3-us-west-1.amazonaws.com/crystal-steamed-dumplings-11.jpg');
-    background-position: 70% 65%;
-    text-align: center;
+  padding-left: 8px;
+  padding-right: 9px;
+  font-family: nyt-cheltenham, Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  // background-image: url('https://dimcooking-dev.s3-us-west-1.amazonaws.com/crystal-steamed-dumplings-11.jpg');
+  background-position: 70% 65%;
+  text-align: center;
 }
 
 .session-submit {
-    background-color: rgb(227, 61, 38); 
-    padding: 0!important;
-    border: none;
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    font-size: 30x;
-    font-weight: 700;
-    border-radius: 5px;
-    color: white;
-    width: 100%;
-    height: 2.5em;
-    cursor: pointer;
+  background-color: rgb(227, 61, 38);
+  padding: 0 !important;
+  border: none;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 30x;
+  font-weight: 700;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  height: 2.5em;
+  cursor: pointer;
 }
 
 .session-submit:hover {
-    background-color: rgb(207, 46, 30);
+  background-color: rgb(207, 46, 30);
 }
 
 .separator {
-    border-bottom: 1px solid rgb(204, 204, 204);
-    text-align: center;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  text-align: center;
 }
 
 .login-input {
-    width: 100%;
-    height: 2.5rem;
-    font-size: 1rem;
-    font-family: inherit;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
 .login-form-container {
-    background-color: white;
-    width: 850px;
-    height: 100%;
+  background-color: white;
+  width: 850px;
+  height: 100%;
 }
 
 .welcome {
-    font-size: 22px;
-    letter-spacing: 0.4px;
-    font-family: 'Nanum Myeongjo', serif;
-    font-stretch: condensed;
-    text-align: center;
-    
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  font-family: "Nanum Myeongjo", serif;
+  font-stretch: condensed;
+  text-align: center;
 }
 
 .close-x {
-    position: relative;
-    left: 315px;
-    top: 2px;
-    font-weight: 100;
-    color: grey;
-    font-family: arial, sans-serif;
-    font-stretch: expanded;
-    cursor: pointer;
+  position: relative;
+  left: 315px;
+  top: 2px;
+  font-weight: 100;
+  color: grey;
+  font-family: arial, sans-serif;
+  font-stretch: expanded;
+  cursor: pointer;
 }
 
 .login-form-box {
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    font-weight: 100;
-    padding: 20px;
-    width: 400px;
-    font-size: 12px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 100;
+  padding: 20px;
+  width: 400px;
+  font-size: 12px;
 }
 
 .nav-button {
-    color: #e33d26;
-    font-weight: 800;
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    top: 0;
-    background-color: white;
-    border-top: 1px solid lightgrey;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
-    padding: 12px;
-    border-radius: 2px;
-    cursor: pointer;
-    position: relative;
-    right: 15px;
-
+  color: #e33d26;
+  font-weight: 800;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  top: 0;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  right: 15px;
 }
 .nav-button:hover {
-    background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .plain-text {
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    font-weight: 100;
-    font-size: 11px;
-    color: black;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 100;
+  font-size: 11px;
+  color: black;
 }
 
 .demo-submit {
-    border-radius: 0.19em;
-    width: 100%;
-    font-family: 'Yantramanav', sans-serif;
-    padding-bottom: 5px;
-    padding-right: 15px;
-    border: none;
-    height: 40px;
-    cursor: pointer;
-    font-weight: 555;
-    font-size: 17px;
-    font-stretch: ultra-condensed;
-    background-color: white;
-    border: 1px solid black;
-    display: inline-block;
+  border-radius: 0.19em;
+  width: 100%;
+  font-family: "Yantramanav", sans-serif;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 555;
+  font-size: 17px;
+  font-stretch: ultra-condensed;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
 }
 
 .demo-submit:hover {
-    background-color:  rgb(240,240,240);
+  background-color: rgb(240, 240, 240);
 }
 
-
-
 .main-nav {
-    color: #e33d26;
-    font-family:  'Abril Fatface';
-    font-weight: 900;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    padding-left: 15px;
-    padding-top: 5px;
-    margin-block-start: 0;
-    border-bottom: 2px solid lightgrey;
-    width: 100%;
-    height: 58px;
-    z-index: 9999;   
-    background:white;
-    
+  color: #e33d26;
+  font-family: "Abril Fatface";
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-block-start: 0;
+  border-bottom: 2px solid lightgrey;
+  width: 100%;
+  height: 58px;
+  z-index: 9999;
+  background: white;
 }
 
 .hider {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .placeholder {
-    display: block;
-    text-align: center;
-    font-size: 40px;
+  display: block;
+  text-align: center;
+  font-size: 40px;
 }
 
-
 .space {
-    height: 500px;
+  height: 500px;
 }
 
 .gear-dropdown-btn {
-    position: relative;
-    cursor: pointer;
-    margin-left: 5px;
-    padding-right: 23px;
-    color: grey;
-    float: right;
-    box-sizing: border-box;
-    padding-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+  padding-right: 23px;
+  color: grey;
+  float: right;
+  box-sizing: border-box;
+  padding-bottom: 12px;
 }
 
 .gear-dropdown {
-    position: absolute;
-    background-color: white;
-    
-    border: 1px solid lightgrey;
-    top: 52px;
-    right: 0px;
-    width: 200px;
-    height: 40px;
-    z-index: 1;
-    max-height: 0; overflow: hidden;
-    opacity: 0;
+  position: absolute;
+  background-color: white;
 
-    transition: max-height 0s 1.5s,
-                opacity .4s 1s;
-    pointer-events: none;
+  border: 1px solid lightgrey;
+  top: 59px;
+  right: 0px;
+  width: 200px;
+  height: 40px;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition: max-height 0s 1.5s, opacity 0.4s 1s;
+  pointer-events: none;
 }
 
-
 .gear-dropdown > * {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .gear-dropdown:hover,
 .gear-dropdown-btn:hover .gear-dropdown {
-    max-height: 100px;
-    opacity: 1;
-    transition-delay: 0s;
+  max-height: 100px;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .errors {
-    position: fixed;
-    
+  position: fixed;
 }
 
 .error-text {
-    padding-top: 10px;
-    text-align: left;
-    color:  #e33d26;
+  padding-top: 10px;
+  text-align: left;
+  color: #e33d26;
 }
 
 .main-title {
-    width: 19%;
-    color: #e33d26;
+  width: 19%;
+  color: #e33d26;
 }
 Link {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 .gear-dropdown-btn:hover > .gear-dropdown {
-    
-    color: #e33d26;
-    
+  color: #e33d26;
 }
 
 .gear-dropdown-btn:hover {
-    color: #e33d26;
+  color: #e33d26;
 }
 
-.splash > img{
-    width: 100%;
-    height: 95vh;
-    top: 58px;
-    object-fit: cover;
-    object-position: 65% 25%;
-    max-height: 800px;
+.splash > img {
+  width: 100%;
+  height: 95vh;
+  top: 58px;
+  object-fit: cover;
+  object-position: 65% 25%;
+  max-height: 800px;
 }
-
 
 .dot {
-    z-index: 5;
-    border-radius: 54px;
-    font-size: 12px;
-    height: 108px;
-    width: 108px;
-    line-height: 1.5rem;
-    
-    position: absolute;
-    background: #e33d26;
-    bottom: 310px;
-    left: 50px;
-    text-align: center;
-    font-family: nyt-karnak-display-130124,nyt-stymie,Georgia,"Times New Roman",serif;
-    color: white;
-    font-weight: 600;
+  z-index: 5;
+  border-radius: 54px;
+  font-size: 12px;
+  height: 108px;
+  width: 108px;
+  line-height: 1.5rem;
+
+  position: absolute;
+  background: #e33d26;
+  bottom: 310px;
+  left: 50px;
+  text-align: center;
+  font-family: nyt-karnak-display-130124, nyt-stymie, Georgia, "Times New Roman",
+    serif;
+  color: white;
+  font-weight: 600;
 }
 
 .dot-text {
-    position: relative;
-    bottom: -32px;
-    right: -4px;
-    width: 100px;
-    height: 15px;
+  position: relative;
+  bottom: -32px;
+  right: -4px;
+  width: 100px;
+  height: 15px;
 }
 
 .splash-name {
-    z-index: 5;
-    background: white;
-    width: 285px;
-    height: 260px;
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
-    text-align: center;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+  z-index: 5;
+  background: white;
+  width: 285px;
+  height: 260px;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.75);
 }
 
 .splash-title {
-    font-size: 30px;
-    font-weight: 100;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .splash-text {
-    font-family: nyt-karnak-display-130124,nyt-stymie,Georgia,"Times New Roman",serif;
-    font-weight: bold;
+  font-family: nyt-karnak-display-130124, nyt-stymie, Georgia, "Times New Roman",
+    serif;
+  font-weight: bold;
 }
 
-
 .search {
-    width: 50%;
+  width: 50%;
 }
