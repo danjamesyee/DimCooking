@@ -55,7 +55,7 @@ class RecipePage extends React.Component {
       );
     } else {
       savedRecipesOfUser = Object.values(savedRecipes).filter(
-        (savedRecipe) => (savedRecipe.userId = currentUser.id)
+        (savedRecipe) => savedRecipe.userId === currentUser.id
       );
     }
     let currentSave = savedRecipesOfUser.find(

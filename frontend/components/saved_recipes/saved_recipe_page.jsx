@@ -8,7 +8,7 @@ class SavedRecipePage extends React.Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.props.fetchSavedRecipes();
+    this.props.fetchSavedRecipes(this.props.currentUser.id);
     this.props.fetchRecipes();
   }
 
@@ -17,10 +17,12 @@ class SavedRecipePage extends React.Component {
   }
 
   render() {
+    // debugger;
     if (!this.props.recipes || !this.props.savedRecipes) return null;
     const { currentUser, savedRecipes } = this.props;
+
     let savedRecipesOfUser = Object.values(savedRecipes).filter(
-      (savedRecipe) => (savedRecipe.userId = currentUser.id)
+      (savedRecipe) => savedRecipe.user_id === currentUser.id
     );
     let recipeIds = savedRecipesOfUser.map((sr) => sr.recipe_id);
     let recipes = Object.values(this.props.recipes).filter((recipe) =>
