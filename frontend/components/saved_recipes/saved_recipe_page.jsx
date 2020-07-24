@@ -17,7 +17,6 @@ class SavedRecipePage extends React.Component {
   }
 
   render() {
-    // debugger;
     if (!this.props.recipes || !this.props.savedRecipes) return null;
     const { currentUser, savedRecipes } = this.props;
 

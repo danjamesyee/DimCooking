@@ -34,7 +34,6 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch) => {
-  debugger;
   return {
     handleNote: (note) => dispatch(updateNote(note)),
     deleteNote: () => dispatch(deleteComment(commentId)),

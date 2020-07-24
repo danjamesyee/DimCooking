@@ -43,7 +43,6 @@ class MainPage extends React.Component {
       return null;
     }
     const { recipe, recipes } = this.state;
-    // debugger
     const splashRecipe = recipes[0] || {};
     return (
       <div className="body">
