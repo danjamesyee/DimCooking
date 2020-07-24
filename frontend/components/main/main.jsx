@@ -42,8 +42,11 @@ class MainPage extends React.Component {
     if (this.props.recipes.length === 0) {
       return null;
     }
+    const currentDate = new Date();
     const { recipe, recipes } = this.state;
-    const splashRecipe = recipes[0] || {};
+    console.log();
+    const recipeOfTheDay = Math.floor(currentDate.getDay());
+    const splashRecipe = recipes[recipeOfTheDay] || {};
     return (
       <div className="body">
         <Link to={`/recipes/${splashRecipe.id}`} className="splash">
