@@ -3,8 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .note-container {
-  position: relative;
-  left: 30%;
+  // position: relative;
+  // left: 40%;
+  // display: inline-block;
+  // width: 30%;
+  // vertical-align: top;
+  // overflow: hidden;
 }
 
 .note-title {
@@ -15,10 +19,13 @@
 .note-container > div > div > form > textarea {
   border: 1px solid lightgrey;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
-  width: 65%;
+  width: 100%;
   font-size: 17px;
 }
-
+.note-container > div > div > form > div {
+  display: inline-block;
+  width: 70%;
+}
 .note-form > textarea {
   border: 1px solid lightgrey;
   font-family: nyt-franklin, helvetica, arial, sans-serif;

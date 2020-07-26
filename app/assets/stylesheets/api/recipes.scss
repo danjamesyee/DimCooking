@@ -56,17 +56,18 @@ button:focus {
   width: 38%;
 }
 .instructions {
-  display: flex;
-  justify-content: space-between;
   font-family: "Bevan", cursive;
   font-size: 12px;
   font-weight: bold;
-  flex-wrap: wrap;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .preparation {
+  position: relative;
   width: 70%;
-  height: 100%;
+  margin-left: 2%;
+  // height: 100%;
 }
 
 .preparation > div {
@@ -80,6 +81,7 @@ button:focus {
 }
 
 .ingredient {
+  position: relative;
   font-family: "Yantramanav", sans-serif;
   font-size: 16px;
 }

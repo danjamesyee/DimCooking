@@ -120,24 +120,23 @@ class RecipePage extends React.Component {
 
         <br />
 
-        <div className="instructions">
-          <div className="ingredients">
-            INGREDIENTS
-            <br />
-            <br />
-            {ingredients}
-          </div>
-          <div className="preparation">
-            <h5>PREPARATION</h5>
-            <br />
-            <br />
-            {preparation}
-          </div>
-        </div>
-        <div className="note-container">
-          <div className="note-title">COOKING NOTES</div>
+        <div className="ingredients instructions">
+          INGREDIENTS
           <br />
-          <CookingNoteIndexContainer recipe={recipe} />
+          <br />
+          {ingredients}
+        </div>
+        <div className="preparation instructions">
+          <div></div>
+          <h5>PREPARATION</h5>
+          <br />
+          <br />
+          {preparation}
+          <div className="note-container">
+            <div className="note-title">COOKING NOTES</div>
+            <br />
+            <CookingNoteIndexContainer recipe={recipe} />
+          </div>
         </div>
       </div>
     );
