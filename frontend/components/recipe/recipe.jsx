@@ -134,7 +134,6 @@ class RecipePage extends React.Component {
             {preparation}
           </div>
         </div>
-
         <div className="note-container">
           <div className="note-title">COOKING NOTES</div>
           <br />

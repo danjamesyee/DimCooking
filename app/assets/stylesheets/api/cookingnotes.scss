@@ -3,61 +3,59 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .note-container {
-    position: relative;
-    left: 30%;
+  position: relative;
+  left: 30%;
 }
 
 .note-title {
-    font-family: 'Bevan', cursive;
-    font-size: 13px;
+  font-family: "Bevan", cursive;
+  font-size: 13px;
 }
 
 .note-container > div > div > form > textarea {
-    border: 1px solid lightgrey;
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    width: 65%;
-    font-size: 17px;
-    
+  border: 1px solid lightgrey;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  width: 65%;
+  font-size: 17px;
 }
 
 .note-form > textarea {
-    border: 1px solid lightgrey;
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    width: 65%;
-    font-size: 17px;
+  border: 1px solid lightgrey;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  width: 65%;
+  font-size: 17px;
 }
 
 .note-form {
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 .note-form > div {
-    padding-bottom: 5px;
-    font-weight: bold;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 
 .note-item {
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    font-size: 15px;
-    padding-left: 10px;
-    width: 65%;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
+  width: 65%;
 }
 
 .note-item > h4 {
-    padding-bottom: 5px;
-    font-weight: 600;
-    display: flex;
-    font-size: 14px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  display: flex;
+  font-size: 14px;
 }
 
 .note-item > h5 {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .note-item > div {
-    padding-bottom: 10px;
-    border-radius: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .prof-dot {
@@ -66,26 +64,24 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  
 }
 
 .note-prof {
-    border-bottom: 2px solid lightgrey;
-    width: 65%;
-    display: flex;
+  border-bottom: 2px solid lightgrey;
+  width: 65%;
+  display: flex;
 }
 
-
 .time {
-    font-weight: 100;
-    position: relative;
-    left: 10px;
-    color: grey;
+  font-weight: 100;
+  position: relative;
+  left: 10px;
+  color: grey;
 }
 
 .not-logged-note {
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
-    font-weight: 100;
-    color: red;
-    font-size: 15px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 100;
+  color: red;
+  font-size: 15px;
 }
