@@ -296,22 +296,28 @@ button:focus {
 .search-cont {
   width: 55%;
   position: fixed;
-  left: 25%;
+  left: 20%;
 }
 
 #search-res {
   background: white;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   color: black;
   font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   font-weight: 100;
   width: 105%;
+  font-size: 20px;
 }
 #search-res:hover {
   background: grey;
+  color: white;
 }
-
+#search-flex {
+  display: flex;
+  justify-content: flex-start;
+}
 #clear-search {
   position: relative;
   display: inline-block;
@@ -353,4 +359,10 @@ button:focus {
   width: 20px;
   position: relative;
   top: 3px;
+}
+
+#search-img {
+  width: 80px;
+  // height: 50px;
+  padding-right: 10px;
 }

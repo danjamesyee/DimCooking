@@ -54,7 +54,12 @@ class Search extends React.Component {
       results = this.state.results.map((res, i) => {
         return (
           <div id="search-res">
-            <Link to={`/recipes/${res.id}`} onClick={() => this.clear()}>
+            <Link
+              to={`/recipes/${res.id}`}
+              onClick={() => this.clear()}
+              id="search-flex"
+            >
+              <img id="search-img" src={res.photoUrl} />
               <div>{res.title}</div>
             </Link>
           </div>
