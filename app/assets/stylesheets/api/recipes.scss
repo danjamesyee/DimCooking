@@ -285,3 +285,84 @@ button:focus {
   width: 40%;
   margin: 0 auto;
 }
+
+.search-bar {
+  border: none;
+  font-size: 20px;
+  width: 80%;
+  outline: none;
+}
+
+.search-cont {
+  width: 55%;
+  position: fixed;
+  left: 20%;
+}
+
+#search-res {
+  background: white;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: black;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  width: 105%;
+  font-size: 20px;
+}
+#search-res:hover {
+  background: grey;
+  color: white;
+}
+#search-flex {
+  display: flex;
+  justify-content: flex-start;
+}
+#clear-search {
+  position: relative;
+  display: inline-block;
+  left: 95%;
+  bottom: 38px;
+  font-weight: 100;
+  font-size: 20px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#x {
+  color: white;
+  position: relative;
+  bottom: 10px;
+  right: 2px;
+}
+
+#srcont {
+  bottom: 52px;
+  position: relative;
+  right: 7%;
+}
+
+#search-icon {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+#search-icon > img {
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+
+#search-img {
+  width: 80px;
+  // height: 50px;
+  padding-right: 10px;
+}
