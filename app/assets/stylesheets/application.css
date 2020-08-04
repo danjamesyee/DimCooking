@@ -14,33 +14,31 @@
  *= require_self
  */
 
- 
-
 html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
 
+  margin: 0;
 
-
-html, body {
-
-height: 100%;
-
-margin:0;
-
-padding:0;
-
-
-
+  padding: 0;
 }
 
-h4,h5,h6 {
+button {
+  cursor: pointer;
+}
+
+h4,
+h5,
+h6 {
   margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
 }
 
 #root {
@@ -49,11 +47,11 @@ h4,h5,h6 {
 }
 
 textarea {
-    border: none;
-    overflow: auto;
-    outline: none;
-    box-shadow: none;
-    resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  resize: none;
 }
 .cheese {
   display: inline;
@@ -61,7 +59,7 @@ textarea {
   overflow-x: hidden;
 }
 .splash {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
 }
 
@@ -72,12 +70,11 @@ a {
   font-family: inherit;
 }
 .greeting-loggedin {
-  display: flex
+  display: flex;
 }
 .splash-wrap {
   position: relative;
 }
-
 
 .footer {
   position: relative;
@@ -89,22 +86,20 @@ a {
 }
 
 .footer > div {
-  
   bottom: 22%;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   line-height: 1.5;
   font-size: 18px;
   padding-bottom: 20px;
 }
 
-.footer > div, .footer > h1 {
+.footer > div,
+.footer > h1 {
   left: 10%;
-  
 }
 
-
 .foot-label {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   width: 30%;
   font-size: 18px;
   position: relative;
@@ -113,20 +108,19 @@ a {
 }
 
 .foo {
-  top: 23px
+  top: 23px;
 }
 
 .foot-label > h1 {
-  font-family: nyt-franklin,Arial,Helvetica,sans-serif;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   font-size: 12px;
-  padding-bottom: 16px
+  padding-bottom: 16px;
 }
-
 
 .flexer {
   height: 100%;
   width: 100%;
-  
+
   display: flex;
   justify-content: space-around;
 }
@@ -139,22 +133,21 @@ a {
 }
 
 .learn > h1 {
-  font-family: nyt-franklin,Arial,Helvetica,sans-serif;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
-.learn > div{
+.learn > div {
   position: relative;
-  
+
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
 
   color: white;
-  font-family: nyt-franklin,Arial,Helvetica,sans-serif;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 100;
 }
-
 
 .learn > h1 {
   position: relative;
@@ -162,6 +155,3 @@ a {
   padding-bottom: 28px;
   padding-left: 10px;
 }
-
-
-

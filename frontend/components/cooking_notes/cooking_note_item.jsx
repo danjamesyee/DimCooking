@@ -26,8 +26,12 @@ class CookingNoteItem extends React.Component {
     if (currentUser && currentUser.id === cookingnote.author_id) {
       buttons = (
         <div>
-          <button onClick={() => this.setState({ edit: true })}>Edit</button>
-          <button onClick={this.handleDelete}>Delete</button>
+          <button id="button" onClick={() => this.setState({ edit: true })}>
+            Edit
+          </button>
+          <button id="button" onClick={this.handleDelete}>
+            Delete
+          </button>
         </div>
       );
     } else {

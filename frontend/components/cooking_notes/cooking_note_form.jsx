@@ -41,7 +41,9 @@ class CookingNoteForm extends React.Component {
           />
           <br />
 
-          <button type="submit">{this.props.formType}</button>
+          <button id="button" type="submit">
+            {this.props.formType}
+          </button>
         </form>
       </div>
     );
