@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { input: "", results: [], typing: false };
+    this.state = { input: "", results: [], typing: false, cursor: 0 };
     this.handleTyping = this.handleTyping.bind(this);
     this.filterResults = this.filterResults.bind(this);
     this.clear = this.clear.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
   componentDidMount() {
@@ -22,6 +23,23 @@ class Search extends React.Component {
     document.removeEventListener("click", this.handleClickOutside, true);
   }
 
+  handleKeyDown(e) {
+    const { cursor, results } = this.state;
+    if (e.keyCode === 38 && cursor > 0) {
+      this.setState((prevState) => ({
+        cursor: prevState.cursor - 1,
+      }));
+    } else if (e.keyCode === 40 && cursor < results.length - 1) {
+      this.setState((prevState) => ({
+        cursor: prevState.cursor + 1,
+      }));
+    } else if (event.keyCode === 13) {
+      console.log(results[cursor]);
+      this.props.history.push(`/recipes/${results[cursor].id}`);
+      this.clear();
+    }
+  }
+
   handleClickOutside(event) {
     const domNode = ReactDOM.findDOMNode(this);
 
@@ -31,7 +49,8 @@ class Search extends React.Component {
   }
 
   handleTyping(e) {
-    this.setState({ input: e.target.value, typing: true });
+    e.preventDefault();
+    this.setState({ input: e.target.value, typing: true, cursor: 0 });
     this.filterResults();
   }
 
@@ -49,11 +68,18 @@ class Search extends React.Component {
 
   render() {
     let results;
+    const { cursor } = this.state;
     // debugger;
     if (this.props.recipes) {
       results = this.state.results.map((res, i) => {
         return (
-          <div id="search-res">
+          <div
+            className="search-res"
+            key={res.id}
+            id={cursor === i ? "active" : null}
+            // onKeyDown={this.handleKeyDown}
+            // onKeyPress={() => this.handleEnter(res)}
+          >
             <Link
               to={`/recipes/${res.id}`}
               onClick={() => this.clear()}
@@ -78,6 +104,7 @@ class Search extends React.Component {
             type="text"
             onChange={this.handleTyping}
             value={this.state.input}
+            onKeyDown={this.handleKeyDown}
           />
         </form>
         {this.state.typing && (

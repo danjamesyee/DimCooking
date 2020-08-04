@@ -299,7 +299,7 @@ button:focus {
   left: 20%;
 }
 
-#search-res {
+.search-res {
   background: white;
   padding-left: 20px;
   padding-bottom: 5px;
@@ -310,7 +310,8 @@ button:focus {
   width: 105%;
   font-size: 20px;
 }
-#search-res:hover {
+
+.search-res:hover {
   background: grey;
   color: white;
 }
@@ -365,4 +366,9 @@ button:focus {
   width: 80px;
   // height: 50px;
   padding-right: 10px;
+}
+
+#active {
+  background: grey;
+  color: white;
 }
