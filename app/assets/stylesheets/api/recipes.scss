@@ -341,14 +341,15 @@ button:focus {
 #x {
   color: white;
   position: relative;
-  bottom: 10px;
-  right: 2px;
+  bottom: 11px;
+  right: 2.5px;
 }
 
 #srcont {
   bottom: 52px;
   position: relative;
   right: 7%;
+  transition: all 1s;
 }
 
 #search-icon {

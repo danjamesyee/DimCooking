@@ -20,7 +20,31 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
   transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .link-button {
@@ -205,7 +229,6 @@ button {
 
 .hider {
   overflow: hidden;
-  
 }
 
 .placeholder {
