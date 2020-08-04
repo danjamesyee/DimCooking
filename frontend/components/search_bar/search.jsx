@@ -34,7 +34,6 @@ class Search extends React.Component {
         cursor: prevState.cursor + 1,
       }));
     } else if (event.keyCode === 13) {
-      console.log(results[cursor]);
       this.props.history.push(`/recipes/${results[cursor].id}`);
       this.clear();
     }
