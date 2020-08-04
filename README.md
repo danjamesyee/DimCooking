@@ -150,3 +150,4 @@ const Greeting = ({ currentUser, logout, openModal }) => {
   return currentUser ? personalGreeting() : sessionLinks();
 };
 ```
+ ### Search Bar
