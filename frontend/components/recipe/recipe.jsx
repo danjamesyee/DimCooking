@@ -83,7 +83,10 @@ class RecipePage extends React.Component {
       );
     } else if (!currentUser) {
       saveRecipeButton = (
-        <button className="save-recipe-button">
+        <button
+          className="save-recipe-button"
+          onClick={() => this.props.openModal("login")}
+        >
           <img
             src="https://dimcooking-dev.s3-us-west-1.amazonaws.com/icon-bookmark-hover-outline.png"
             width="12px"
