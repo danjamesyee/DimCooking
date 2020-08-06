@@ -62,7 +62,7 @@ class RecipePage extends React.Component {
       (sr) => sr.recipe_id === recipe.id
     );
     let recipeIds = savedRecipesOfUser.map((sr) => sr.recipe_id);
-    if (!recipeIds.includes(recipe.id)) {
+    if (!recipeIds.includes(recipe.id) && currentUser) {
       saveRecipeButton = (
         <button
           className="save-recipe-button"
@@ -73,6 +73,17 @@ class RecipePage extends React.Component {
             })
           }
         >
+          <img
+            src="https://dimcooking-dev.s3-us-west-1.amazonaws.com/icon-bookmark-hover-outline.png"
+            width="12px"
+            height="18px"
+          />{" "}
+          Save to Recipe Box
+        </button>
+      );
+    } else if (!currentUser) {
+      saveRecipeButton = (
+        <button className="save-recipe-button">
           <img
             src="https://dimcooking-dev.s3-us-west-1.amazonaws.com/icon-bookmark-hover-outline.png"
             width="12px"

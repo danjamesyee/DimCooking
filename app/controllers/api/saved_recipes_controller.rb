@@ -10,7 +10,7 @@ class Api::SavedRecipesController < ApplicationController
         if @saved_recipe.save
             render :show
         else
-            render json: @saved_recipe.errors.full_messages, status: 422
+            # render json: @saved_recipe.errors.full_messages, status: 422
         end
     end
 
@@ -24,7 +24,7 @@ class Api::SavedRecipesController < ApplicationController
         if @saved_recipe.update(sr_params)
             render :show
         else
-            render json: @saved_recipe.errors.full_messages, status: 400
+            # render json: @saved_recipe.errors.full_messages, status: 400
         end
     end
 
