@@ -151,3 +151,10 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 };
 ```
  ### Search Bar
+
+ ![searchbar](https://raw.githubusercontent.com/danjamesyee/DimCooking/master/app/assets/images/searchbar.gif)
+ 
+   * Users search by recipe title
+   * Search results link to recipe show
+   * Can navigate results with arrow keys 
+   
