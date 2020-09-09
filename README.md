@@ -157,4 +157,4 @@ const Greeting = ({ currentUser, logout, openModal }) => {
    * Users search by recipe title
    * Search results link to recipe show
    * Can navigate results with arrow keys 
-   
+   * Enter key takes you to recipe show page
