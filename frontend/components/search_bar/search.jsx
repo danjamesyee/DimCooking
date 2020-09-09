@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { fetchRecipes } from "../../actions/recipe_actions";
 import { Link } from "react-router-dom";
+import { Node, Trie } from "./trie";
 
 class Search extends React.Component {
   constructor(props) {
@@ -54,11 +55,20 @@ class Search extends React.Component {
   }
 
   filterResults() {
-    this.setState({
-      results: this.props.recipes.filter((recipe) =>
-        recipe.title.toLowerCase().includes(this.state.input.toLowerCase())
-      ),
-    });
+    let trie = new Trie();
+    // this.props.recipes.forEach((recipe) => {
+    //   trie.add(recipe.title);
+    //   console.log(recipe.title);
+
+    // });
+    trie.add("hello");
+    console.log(trie.print());
+
+    // this.setState({
+    //   results: this.props.recipes.filter((recipe) =>
+    //     recipe.title.toLowerCase().includes(this.state.input.toLowerCase())
+    //   ),
+    // });
   }
 
   clear() {
