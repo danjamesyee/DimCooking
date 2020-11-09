@@ -2,7 +2,15 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import configureStore from './store/store';
 import Root from './components/root'
+import ReactGA from 'react-ga';
+
 import { fetchSavedRecipes, fetchSavedRecipe, createSavedRecipe, updateSavedRecipe, deleteSavedRecipe } from './actions/saved_recipe_actions';
+
+function initializeReactGA() {
+    ReactGA.initialize('G-1S6NM4L3KG');
+    ReactGA.pageview('/homepage');
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
